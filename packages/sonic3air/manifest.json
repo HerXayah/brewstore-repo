@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "sonic3air",
+      "title": "Sonic 3 AIR",
+      "author": "NerdsMcGee",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/NerdsMcGee/sonic3air-s2",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

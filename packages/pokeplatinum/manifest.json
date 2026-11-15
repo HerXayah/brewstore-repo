@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "pokeplatinum",
+      "title": "pokeplatinum",
+      "author": "cybervisi0n",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/cybervisi0n/pokeplatinum",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "internal-speakers",
+      "title": "Force Internal Speaker",
+      "author": "Souldbminer, paulocode",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/souldbminerr/switch_internal_speakers_nro",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

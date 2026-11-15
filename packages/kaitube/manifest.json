@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "kaitube",
+      "title": "KaiTube",
+      "author": "Sank-kab",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/Sank-kab/KaiTube",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

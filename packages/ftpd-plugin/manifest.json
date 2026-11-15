@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "ftpd-plugin",
+      "title": "FTPD Plugin",
+      "author": "NerdsMcGee",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/NerdsMcGee/kaihen-ftpd-plugin",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

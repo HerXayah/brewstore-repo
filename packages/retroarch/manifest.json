@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "retroarch",
+      "title": "RetroArch",
+      "author": "NerdsMcGee, libretro",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/NerdsMcGee/retroarch-s2",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

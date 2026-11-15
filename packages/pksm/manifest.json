@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "pksm",
+      "title": "PKSM",
+      "author": "wowilookgood, FlagBrew",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/wowilookgood/PKSM",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

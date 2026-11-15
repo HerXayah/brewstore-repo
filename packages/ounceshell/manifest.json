@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "ounceshell",
+      "title": "OunceShell",
+      "author": "kurumuz, TheFl0w",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/kurumuz/ounceshell",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

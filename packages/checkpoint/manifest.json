@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "checkpoint",
+      "title": "Checkpoint",
+      "author": "wowilookgood, FlagBrew",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/wowilookgood/Checkpoint",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

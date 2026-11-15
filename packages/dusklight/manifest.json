@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "dusklight",
+      "title": "Dusklight",
+      "author": "wowilookgood, Twilit Realm",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/wowilookgood/dusklight",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

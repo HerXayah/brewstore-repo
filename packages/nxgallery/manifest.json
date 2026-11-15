@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "nxgallery",
+      "title": "NXGallery",
+      "author": "wowilookgood, iUltimateLP",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/wowilookgood/NXGallery",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

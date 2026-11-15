@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "srb2",
+      "title": "Sonic Robo Blast 2",
+      "author": "Sonic Team Junior, Hexa",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/misshexa66/SRB2-Ounce",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

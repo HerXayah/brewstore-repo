@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "90dns-tester",
+      "title": "90DNS Tester",
+      "author": "Souldbminer",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/souldbminerr/90DNS-Tester",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}

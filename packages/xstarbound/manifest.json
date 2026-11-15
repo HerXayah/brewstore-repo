@@ -1,0 +1,14 @@
+{
+  "packages": [
+    {
+      "name": "xstarbound",
+      "title": "xStarbound",
+      "author": "Sergalicious",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/Sergaliciousnes/xStarbound-Switch2",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}
