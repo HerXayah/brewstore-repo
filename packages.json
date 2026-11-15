@@ -1,0 +1,214 @@
+{
+  "packages": [
+    {
+      "name": "ounceshell",
+      "title": "OunceShell",
+      "author": "kurumuz, TheFl0w",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/kurumuz/ounceshell",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "90dns-tester",
+      "title": "90DNS Tester",
+      "author": "Souldbminer",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/souldbminerr/90DNS-Tester",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "internal-speakers",
+      "title": "Force Internal Speaker",
+      "author": "Souldbminer, paulocode",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/souldbminerr/switch_internal_speakers_nro",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "ftpd-plugin",
+      "title": "FTPD Plugin",
+      "author": "NerdsMcGee",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/NerdsMcGee/kaihen-ftpd-plugin",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "checkpoint",
+      "title": "Checkpoint",
+      "author": "wowilookgood, FlagBrew",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/wowilookgood/Checkpoint",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "pksm",
+      "title": "PKSM",
+      "author": "wowilookgood, FlagBrew",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/wowilookgood/PKSM",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "nxgallery",
+      "title": "NXGallery",
+      "author": "wowilookgood, iUltimateLP",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/wowilookgood/NXGallery",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "dkc2",
+      "title": "Donkey Kong Country 2",
+      "author": "Souldbminer, elliottate",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/souldbminerr/DKC2Recomp-NX",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "dkc3",
+      "title": "Donkey Kong Country 3",
+      "author": "Souldbminer, elliottate",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/souldbminerr/DKC3Recomp-NX",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "xstarbound",
+      "title": "xStarbound",
+      "author": "Sergalicious",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/Sergaliciousnes/xStarbound-Switch2",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "sm64ex",
+      "title": "Super Mario 64 EX",
+      "author": "NerdsMcGee",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/NerdsMcGee/sm64ex-alo-s2",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "sonic3air",
+      "title": "Sonic 3 AIR",
+      "author": "NerdsMcGee",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/NerdsMcGee/sonic3air-s2",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "srb2",
+      "title": "Sonic Robo Blast 2",
+      "author": "Sonic Team Junior, Hexa",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/misshexa66/SRB2-Ounce",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "ringracers",
+      "title": "Dr. Robotnik's Ring Racers",
+      "author": "Kart Krew, Hexa",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/misshexa66/RingRacers-Ounce",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "pokeplatinum",
+      "title": "pokeplatinum",
+      "author": "cybervisi0n",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/cybervisi0n/pokeplatinum",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "dusklight",
+      "title": "Dusklight",
+      "author": "wowilookgood, Twilit Realm",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/wowilookgood/dusklight",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "akira",
+      "title": "Chiaki-ng/Akira",
+      "author": "xlanor, streetpea, kkwong, and others",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/chiaki-ng/akira-ounce",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "retroarch",
+      "title": "RetroArch",
+      "author": "NerdsMcGee, libretro",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/NerdsMcGee/retroarch-s2",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "donut",
+      "title": "Donut",
+      "author": "Rix565",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/Rix565/ouncedonut",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "bad-apple",
+      "title": "Bad Apple!",
+      "author": "Souldbminer",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/souldbminerr/bad-apple-switch",
+      "release": "latest",
+      "asset": ""
+    },
+    {
+      "name": "kaitube",
+      "title": "KaiTube",
+      "author": "Sank-kab",
+      "description": "",
+      "version": "latest",
+      "url": "https://github.com/Sank-kab/KaiTube",
+      "release": "latest",
+      "asset": ""
+    }
+  ]
+}
