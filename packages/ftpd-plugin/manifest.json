@@ -10,7 +10,8 @@
       "release": "latest",
       "asset": "",
       "target": "sdmc:/",
-      "marker": "sdmc:/kaihen/plugins/ftpd.nso"
+      "marker": "sdmc:/kaihen/plugins/ftpd.nso",
+      "shortcut": false
     }
   ]
 }
