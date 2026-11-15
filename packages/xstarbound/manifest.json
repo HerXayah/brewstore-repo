@@ -8,7 +8,9 @@
       "version": "latest",
       "url": "https://github.com/Sergaliciousnes/xStarbound-Switch2",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "marker": "sdmc:/switch/xstarbound/xStarbound.nro",
+      "stripPrefix": "switch/xstarbound/"
     }
   ]
 }
