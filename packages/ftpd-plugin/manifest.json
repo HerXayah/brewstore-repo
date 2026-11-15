@@ -5,13 +5,14 @@
       "title": "FTPD Plugin",
       "author": "NerdsMcGee",
       "description": "FTP server plugin for kaiHEN.",
-      "version": "latest",
+      "version": "v1.0.0",
       "url": "https://github.com/NerdsMcGee/kaihen-ftpd-plugin",
       "release": "latest",
       "asset": "",
       "target": "sdmc:/",
       "marker": "sdmc:/kaihen/plugins/ftpd.nso",
-      "shortcut": false
+      "shortcut": false,
+      "sha256": "1b796fd08b2bd0ef9e981c7bb0ad70165aa33d961a428424993b1bd16163f086"
     }
   ]
 }

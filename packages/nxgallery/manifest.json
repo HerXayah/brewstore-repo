@@ -5,10 +5,11 @@
       "title": "NXGallery",
       "author": "wowilookgood, iUltimateLP",
       "description": "Image and video gallery for Switch 2.",
-      "version": "latest",
+      "version": "2.0.0-switch2-1",
       "url": "https://github.com/wowilookgood/NXGallery",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "sha256": "86574515d2a5d61cbbb44411503ac888a2725375d9d864c8f0cec0efd3e9e0a2"
     }
   ]
 }

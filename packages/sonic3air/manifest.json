@@ -5,10 +5,11 @@
       "title": "Sonic 3 AIR",
       "author": "NerdsMcGee",
       "description": "Sonic 3 Angel Island Revisited port.",
-      "version": "latest",
+      "version": "v26.08.15.0-switch2-rel1",
       "url": "https://github.com/NerdsMcGee/sonic3air-s2",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "sha256": "f486fe848c7c86debf6f6de633080c8c55202f0de676d3205e3ba63e4ebdadc7"
     }
   ]
 }

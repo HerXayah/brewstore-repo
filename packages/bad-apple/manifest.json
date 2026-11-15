@@ -5,10 +5,11 @@
       "title": "Bad Apple!",
       "author": "Souldbminer",
       "description": "Bad Apple video demo.",
-      "version": "latest",
+      "version": "bad_apple_ounce",
       "url": "https://github.com/souldbminerr/bad-apple-switch",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "sha256": "8f097312ab4ebe073aa70edf6830a085255e8880bfa351befedb01321e6f9c02"
     }
   ]
 }

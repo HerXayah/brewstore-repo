@@ -5,10 +5,11 @@
       "title": "Super Mario 64 EX",
       "author": "NerdsMcGee",
       "description": "Super Mario 64 EX port.",
-      "version": "latest",
+      "version": "v20261114",
       "url": "https://github.com/NerdsMcGee/sm64ex-alo-s2",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "sha256": "76200a0536b3d11513ddd0b2fcaa13ffb0ac88629a7f0301334829563b3000c0"
     }
   ]
 }

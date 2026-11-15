@@ -5,10 +5,11 @@
       "title": "Sonic Robo Blast 2",
       "author": "Sonic Team Junior, Hexa",
       "description": "Sonic Robo Blast 2 port.",
-      "version": "latest",
+      "version": "v2.2.15",
       "url": "https://github.com/misshexa66/SRB2-Ounce",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "sha256": "019885900eb5429f29c6607df1b52dc5885e6fe064a4563079bef0c763977982"
     }
   ]
 }

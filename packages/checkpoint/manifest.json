@@ -5,10 +5,11 @@
       "title": "Checkpoint",
       "author": "wowilookgood, FlagBrew",
       "description": "Save manager for Switch games.",
-      "version": "latest",
+      "version": "v5.3.0-switch2-1",
       "url": "https://github.com/wowilookgood/Checkpoint",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "sha256": "aa11bf9567b5469bd8a2479e2060c8be1c4beb3f82cb4370233f68e5cab58fc2"
     }
   ]
 }

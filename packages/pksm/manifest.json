@@ -5,10 +5,11 @@
       "title": "PKSM",
       "author": "wowilookgood, FlagBrew",
       "description": "Pok\u00e9mon save manager.",
-      "version": "latest",
+      "version": "10.4.0-switch2-1",
       "url": "https://github.com/wowilookgood/PKSM",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "sha256": "5d406215feba4c33483829855b21eaad18be5e2142b0ab3204dc2e3d63a2f860"
     }
   ]
 }

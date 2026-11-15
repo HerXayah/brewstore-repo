@@ -5,10 +5,11 @@
       "title": "Donut",
       "author": "Rix565",
       "description": "Donut homebrew application.",
-      "version": "latest",
+      "version": "v1.0",
       "url": "https://github.com/Rix565/ouncedonut",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "sha256": "8f8c1cd79a2b21f0d57ae349b971bd35ebee8cf15400da62fe22208e8f07882f"
     }
   ]
 }

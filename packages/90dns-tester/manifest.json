@@ -5,10 +5,11 @@
       "title": "90DNS Tester",
       "author": "Souldbminer",
       "description": "Checks whether Nintendo network domains are being blocked.",
-      "version": "latest",
+      "version": "1.0.5-Ounce",
       "url": "https://github.com/souldbminerr/90DNS-Tester",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "sha256": "a33cd6925822b5b890a1a7366ad2e433dd49e240508cd82f8f726465fad83316"
     }
   ]
 }

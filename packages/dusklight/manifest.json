@@ -5,10 +5,11 @@
       "title": "Dusklight",
       "author": "wowilookgood, Twilit Realm",
       "description": "Dusklight Zelda project port.",
-      "version": "latest",
+      "version": "v2.0.3-switch2-1",
       "url": "https://github.com/wowilookgood/dusklight",
       "release": "latest",
-      "asset": ""
+      "asset": "",
+      "sha256": "ba572af4b7edd1d6793b769e3e375220f928d7dd8dd71a422e042559b0213d80"
     }
   ]
 }
