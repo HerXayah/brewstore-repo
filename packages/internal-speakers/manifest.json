@@ -4,7 +4,7 @@
       "name": "internal-speakers",
       "title": "Force Internal Speaker",
       "author": "Souldbminer, paulocode",
-      "description": "",
+      "description": "Forces audio through the console internal speakers.",
       "version": "latest",
       "url": "https://github.com/souldbminerr/switch_internal_speakers_nro",
       "release": "latest",

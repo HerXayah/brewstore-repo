@@ -4,7 +4,7 @@
       "name": "retroarch",
       "title": "RetroArch",
       "author": "NerdsMcGee, libretro",
-      "description": "",
+      "description": "RetroArch multi-system emulator frontend.",
       "version": "latest",
       "url": "https://github.com/NerdsMcGee/retroarch-s2",
       "release": "latest",
