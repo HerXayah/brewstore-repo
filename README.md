@@ -36,3 +36,27 @@ from the console.
 The scheduled workflow `.github/workflows/update-manifests.yml` refreshes
 `version` and `sha256` from each package's latest GitHub release using the
 workflow's own token.
+
+## Install layout
+
+Default target:
+
+```text
+sdmc:/switch/brewstore/apps/<package>/
+```
+
+Manifests should omit `target` unless the app requires a specific path. Use an
+explicit target only for apps that hardcode one:
+
+```json
+"target": "sdmc:/switch"
+```
+
+or, for root-drop packages:
+
+```json
+"target": "sdmc:/"
+```
+
+Root targets are exceptions and must have a `marker` or a single-file asset.
+Apps that write to the SD root should be avoided unless unavoidable.

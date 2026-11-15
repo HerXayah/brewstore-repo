@@ -9,7 +9,9 @@
       "url": "https://github.com/misshexa66/RingRacers-Ounce",
       "release": "latest",
       "asset": "",
-      "sha256": "0c1b2a5952b74024cd86d5f774a86c01dcee582f655ceac343f4519fc17406bc"
+      "sha256": "0c1b2a5952b74024cd86d5f774a86c01dcee582f655ceac343f4519fc17406bc",
+      "target": "sdmc:/switch/ringracers-ounce",
+      "stripPrefix": "switch/ringracers-ounce/"
     }
   ]
 }
