@@ -1,0 +1,28 @@
+{
+  "packages": [
+    {
+      "name": "example-source",
+      "title": "Example Homebrew",
+      "author": "Example Author",
+      "description": "A sample catalog entry. Replace the URL and icon with a real package archive.",
+      "icon": "https://example.com/icon.png",
+      "version": "main",
+      "url": "https://github.com/example/example",
+      "release": "latest",
+      "asset": "",
+      "branch": "main",
+      "sha256": ""
+    },
+    {
+      "name": "direct-archive",
+      "title": "Direct Archive",
+      "author": "Example Author",
+      "description": "Shows a direct archive URL instead of a GitHub repository URL.",
+      "icon": "",
+      "version": "1.0.0",
+      "url": "https://codeload.github.com/example/example/zip/refs/heads/main",
+      "asset": "example.zip",
+      "sha256": ""
+    }
+  ]
+}
