@@ -1,6 +1,5 @@
 {
   "include": [
-    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/ounceshell/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/90dns-tester/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/internal-speakers/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/ftpd-plugin/manifest.json",
