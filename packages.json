@@ -19,6 +19,9 @@
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/retroarch/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/donut/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/bad-apple/manifest.json",
-    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaitube/manifest.json"
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaitube/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/nhse/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaizhar/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/sw2nes/manifest.json"
   ]
 }

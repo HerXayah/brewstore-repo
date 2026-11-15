@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "sw2nes",
+      "title": "SW2NES",
+      "author": "Rodpad",
+      "description": "NES emulator for Switch 2 with Nestopia UE and QuickNES cores.",
+      "version": "v2.12.2",
+      "url": "https://github.com/Rodpad/SW2NES",
+      "release": "latest",
+      "asset": "sw2nes.nro",
+      "target": "sdmc:/switch/sw2nes",
+      "sha256": "661f55474fa9d7dc9dc2f0f63902147ffbebf1022f6471b72fa1991137a1f33a"
+    }
+  ]
+}

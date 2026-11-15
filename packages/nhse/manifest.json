@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "nhse",
+      "title": "NHSE",
+      "author": "sh00kapic",
+      "description": "Animal Crossing: New Horizons save editor for Switch 2.",
+      "version": "v4.0.0",
+      "url": "https://github.com/sh00kapic/nhse",
+      "release": "latest",
+      "asset": "nhse.nro",
+      "target": "sdmc:/switch",
+      "sha256": "72ba04aa5d9b4715f604447d209930ab842591aaedae26ba6f33a50632fd811b"
+    }
+  ]
+}
