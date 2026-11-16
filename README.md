@@ -42,7 +42,7 @@ workflow's own token.
 Default target:
 
 ```text
-sdmc:/switch/brewstore/apps/<package>/
+sdmc:/brewstore/apps/<package>/
 ```
 
 Manifests should omit `target` unless the app requires a specific path. Use an
