@@ -69,3 +69,60 @@ GitLab project URLs are also supported for release resolution:
 ```
 
 GitLab release assets use the same `asset` hint rules as GitHub.
+
+## Homebrew path guide
+
+This applies to any Switch 2 homebrew, not just brewstore.
+
+Avoid hardcoding absolute paths such as:
+
+```text
+sdmc:/switch
+sdmc:/retroarch
+sdmc:/config
+```
+
+Resolve one **app root** and build every other path from it.
+
+Recommended per-app layout:
+
+```text
+sdmc:/switch/<app>/
+  <app>.nro
+  data/
+  config/
+  saves/
+  logs/
+  cache/
+```
+
+or the same shape under `/switch2/<app>/` if that becomes the convention.
+
+Example:
+
+```c
+char root[PATH_MAX];
+fill_pathname_basedir(root, argv[0], sizeof(root));
+
+char config[PATH_MAX];
+char saves[PATH_MAX];
+fill_pathname_join(config, root, "config", sizeof(config));
+fill_pathname_join(saves, root, "saves", sizeof(saves));
+```
+
+Rules:
+
+- The app root is the directory containing the NRO, or a parent chosen by the
+  launcher.
+- Put data, config, saves, logs, and caches under that root.
+- Never write directly to `sdmc:/`, `sdmc:/switch`, or another app's folder.
+- Do not rely on symlinks; FAT32 and exFAT do not support them.
+- If a fixed path is unavoidable, read it from a config file or environment
+  variable instead of compiling it in.
+- Keep a legacy fallback when changing layouts so existing users do not lose
+  saves or config.
+- Separate package files from user files so uninstall can remove only what it
+  installed.
+
+This lets the same build work from `/switch`, `/brewstore/apps`, `/switch2`,
+or a future launcher layout without recompiling.
