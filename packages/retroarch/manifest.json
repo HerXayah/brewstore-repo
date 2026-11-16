@@ -5,13 +5,13 @@
       "title": "RetroArch",
       "author": "NerdsMcGee, libretro",
       "description": "RetroArch multi-system emulator frontend.",
-      "version": "switch2-v0.2.2",
+      "version": "switch2-v0.3.0",
       "url": "https://github.com/NerdsMcGee/retroarch-s2",
       "release": "latest",
       "asset": "",
       "target": "sdmc:/",
       "marker": "sdmc:/switch/retroarch/retroarch_switch.nro",
-      "sha256": "bdd39b1f31ed97355d833182f90e19b8d83ca6be10f57db84543b1667c646040"
+      "sha256": "7c5c0b95913452247a3f785a5eb1c3a8ab2d9fa34ff84a4e8f23e3887d70ebe8"
     }
   ]
 }

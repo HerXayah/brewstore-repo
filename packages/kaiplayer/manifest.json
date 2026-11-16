@@ -6,11 +6,11 @@
       "author": "Mizuiro",
       "description": "Music player for Switch 2: MP3, FLAC, Ogg and WAV, album art and playlists.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kaiplayer/main/icon.jpg",
-      "version": "v0.3.0-beta",
+      "version": "v0.7.0-beta",
       "url": "https://github.com/mizuiroame/kaiplayer",
       "release": "latest",
       "asset": "",
-      "sha256": "75cf0f4d54785d8e2aacc613ab127b473ccdf709cb9d5e3cbc0fdadd2a56dd63"
+      "sha256": "c79eeb55979d4bccf5291bd6ea987dd44150b615f754f642877a79c120d17982"
     }
   ]
 }
