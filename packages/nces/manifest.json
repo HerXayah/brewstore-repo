@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "nces",
+      "title": "Nic Cage Eats Stuff",
+      "author": "PennyLoafer, Cart1416",
+      "description": "Nic Cage game for Switch 2.",
+      "version": "release",
+      "url": "https://github.com/PennyLoafer5/nces-switch2",
+      "release": "latest",
+      "asset": "nces-switch2.nro",
+      "target": "sdmc:/switch",
+      "sha256": "92325e17e71faa6d8f74a9e941c0b82b19118b31d0024c2131ebd3ec6b8fa384"
+    }
+  ]
+}

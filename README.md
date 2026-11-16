@@ -60,3 +60,12 @@ or, for root-drop packages:
 
 Root targets are exceptions and must have a `marker` or a single-file asset.
 Apps that write to the SD root should be avoided unless unavoidable.
+
+GitLab project URLs are also supported for release resolution:
+
+```json
+"url": "https://gitlab.com/Azkali/moonlight-nx2",
+"release": "latest"
+```
+
+GitLab release assets use the same `asset` hint rules as GitHub.

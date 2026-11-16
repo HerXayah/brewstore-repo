@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "openrct2",
+      "title": "OpenRCT2",
+      "author": "Souldbminer, Wander_Eule",
+      "description": "OpenRCT2 port for Switch 2. Requires your own RollerCoaster Tycoon 2 files.",
+      "version": "v1.0-ounce",
+      "url": "https://github.com/souldbminerr/OpenRCT2-Switch",
+      "release": "latest",
+      "asset": "openrct2.nro",
+      "target": "sdmc:/switch/openrct2",
+      "sha256": "9c129e383c5f48186ca46a10e7ed1c221e4057b8e4943bff01a8a2d18a7782f4"
+    }
+  ]
+}

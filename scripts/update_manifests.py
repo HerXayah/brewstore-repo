@@ -4,6 +4,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -22,6 +23,12 @@ def request_json(url):
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=30) as response:
         return json.load(response)
+
+
+def request_text(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "brewstore-catalog"})
+    with urllib.request.urlopen(req, timeout=30) as response:
+        return response.read().decode("utf-8", "replace")
 
 
 def select_asset(assets, hint):
@@ -51,32 +58,76 @@ def digest_hex(asset):
     return ""
 
 
+def gitlab_release(url):
+    project = url[len("https://gitlab.com/"):]
+    project = urllib.parse.quote(project, safe="")
+    releases = request_json(
+        f"https://gitlab.com/api/v4/projects/{project}/releases?per_page=1"
+    )
+    if not releases:
+        return None
+    release = releases[0]
+    links = release.get("assets", {}).get("links", [])
+    assets = [
+        {"name": link.get("name", ""), "url": link.get("direct_asset_url") or link.get("url", "")}
+        for link in links
+    ]
+    return release.get("tag_name", ""), assets
+
+
+def gitlab_digest(assets, name):
+    wanted = name + ".sha256"
+    for asset in assets:
+        if asset["name"] == wanted and asset["url"]:
+            text = request_text(asset["url"]).strip().split()
+            if text and re.fullmatch(r"[0-9a-fA-F]{64}", text[0]):
+                return text[0].lower()
+    return ""
+
+
 def main():
     changed = 0
     for path in sorted((ROOT / "packages").glob("*/manifest.json")):
         data = json.loads(path.read_text())
         for package in data.get("packages", []):
-            match = re.match(r"https://github\.com/([^/]+)/([^/]+)", package.get("url", ""))
-            if not match:
-                continue
-            owner, repo = match.group(1), match.group(2)
-            try:
-                releases = request_json(
-                    f"https://api.github.com/repos/{owner}/{repo}/releases?per_page=1"
-                )
-            except Exception as error:
-                print(f"{package['name']}: release lookup failed: {error}", file=sys.stderr)
-                continue
-            if not releases:
-                print(f"{package['name']}: no releases")
-                continue
-            release = releases[0]
-            asset = select_asset(release.get("assets", []), package.get("asset", ""))
-            if not asset:
-                print(f"{package['name']}: no matching asset")
-                continue
-            version = release.get("tag_name", "")
-            sha256 = digest_hex(asset)
+            url = package.get("url", "")
+            if url.startswith("https://gitlab.com/"):
+                try:
+                    release = gitlab_release(url)
+                except Exception as error:
+                    print(f"{package['name']}: GitLab lookup failed: {error}", file=sys.stderr)
+                    continue
+                if not release:
+                    print(f"{package['name']}: no releases")
+                    continue
+                version, assets = release
+                asset = select_asset(assets, package.get("asset", ""))
+                if not asset:
+                    print(f"{package['name']}: no matching asset")
+                    continue
+                sha256 = gitlab_digest(assets, asset["name"])
+            else:
+                match = re.match(r"https://github\.com/([^/]+)/([^/]+)", url)
+                if not match:
+                    continue
+                owner, repo = match.group(1), match.group(2)
+                try:
+                    releases = request_json(
+                        f"https://api.github.com/repos/{owner}/{repo}/releases?per_page=1"
+                    )
+                except Exception as error:
+                    print(f"{package['name']}: release lookup failed: {error}", file=sys.stderr)
+                    continue
+                if not releases:
+                    print(f"{package['name']}: no releases")
+                    continue
+                release = releases[0]
+                asset = select_asset(release.get("assets", []), package.get("asset", ""))
+                if not asset:
+                    print(f"{package['name']}: no matching asset")
+                    continue
+                version = release.get("tag_name", "")
+                sha256 = digest_hex(asset)
             if not version:
                 continue
             if package.get("version") != version:

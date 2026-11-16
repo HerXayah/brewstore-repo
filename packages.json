@@ -23,6 +23,12 @@
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/nhse/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaizhar/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/sw2nes/manifest.json",
-    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaiplayer/manifest.json"
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaiplayer/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/unleashedrecomp/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/moonlight-nx2/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/nces/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/abreloaded/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/openrct2/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/melee/manifest.json"
   ]
 }

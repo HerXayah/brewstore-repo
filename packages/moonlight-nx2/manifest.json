@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "moonlight-nx2",
+      "title": "Moonlight",
+      "author": "Azkali",
+      "description": "Moonlight game-streaming client for Switch 2.",
+      "version": "v1.1.0",
+      "url": "https://gitlab.com/Azkali/moonlight-nx2",
+      "release": "latest",
+      "asset": "",
+      "target": "sdmc:/switch/moonlight-nx2",
+      "sha256": "ebb6d8c3a3031546788718306194a41799c1a6b8895786c98d8247312f18db31"
+    }
+  ]
+}

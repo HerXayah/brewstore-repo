@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "melee",
+      "title": "Super Smash Bros. Melee",
+      "author": "Prlxd",
+      "description": "Super Smash Bros. Melee port for Switch 2. Requires your own NTSC 1.02 ISO.",
+      "version": "v0.8.4",
+      "url": "https://github.com/Prlxd/melee-switch2-port",
+      "release": "latest",
+      "asset": "melee-switch2-port.nro",
+      "target": "sdmc:/switch",
+      "sha256": "b95b9ec5c7a03886ac5eb106b3cd84313f39b8a49c6f8dbb08b516b9b734cd28"
+    }
+  ]
+}
