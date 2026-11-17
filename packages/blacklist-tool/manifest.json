@@ -1,0 +1,17 @@
+{
+  "packages": [
+    {
+      "name": "blacklist-tool",
+      "title": "blacklist-tool",
+      "author": "s8n",
+      "description": "View and modify the Switch 2 function blacklist.",
+      "version": "v1.0.0",
+      "url": "https://github.com/s8n/blacklist-tool",
+      "release": "latest",
+      "asset": "blacklist-tool-switch2.nro",
+      "target": "sdmc:/switch/blacklist-tool",
+      "marker": "sdmc:/switch/blacklist-tool/blacklist-tool-switch2.nro",
+      "sha256": "719bcb90a7251014e41633b14cf093bd32cea8eccf6c605a8d0b91b81391a787"
+    }
+  ]
+}
