@@ -33,6 +33,7 @@
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kairadio/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/cemu/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/switchfin/manifest.json",
-    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/blacklist-tool/manifest.json"
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/blacklist-tool/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/brewstore/manifest.json"
   ]
 }
