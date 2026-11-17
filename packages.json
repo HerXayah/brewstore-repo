@@ -30,6 +30,8 @@
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/abreloaded/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/openrct2/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/melee/manifest.json",
-    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kairadio/manifest.json"
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kairadio/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/cemu/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/switchfin/manifest.json"
   ]
 }

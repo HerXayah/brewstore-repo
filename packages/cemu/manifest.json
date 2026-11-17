@@ -1,0 +1,17 @@
+{
+  "packages": [
+    {
+      "name": "cemu",
+      "title": "Cemu",
+      "author": "TheAJLive / Cemu",
+      "description": "Wii U emulator for Switch 2.",
+      "version": "v1.3.2",
+      "url": "https://github.com/TheAJLive/Cemu-NX2",
+      "release": "latest",
+      "asset": "cemu-switch2.nro",
+      "target": "sdmc:/switch/cemu",
+      "marker": "sdmc:/switch/cemu/cemu-switch2.nro",
+      "sha256": "bfa655a600ed5d59472cd043a668c602e4e01be7387e73073ed4f34f154d641f"
+    }
+  ]
+}
