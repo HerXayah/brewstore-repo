@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "ounce-nxengine-evo",
+      "title": "Ounce-NXEngine-Evo",
+      "author": "Yavia",
+      "description": "Cave Story engine (NXEngine-evo) port for Switch 2.",
+      "icon": "https://raw.githubusercontent.com/ya-v-ia/ounce-nxengine-evo/switch2/platform/switch/icon.jpg",
+      "version": "v2.6.5-oz",
+      "url": "https://github.com/ya-v-ia/ounce-nxengine-evo",
+      "branch": "switch2",
+      "release": "latest",
+      "asset": "Ounce-NXEngine-Evo-2.6.5.nro",
+      "sha256": "47d456b3b221db54b6a2f8ada0d0c56549f90f9d0a8808df1ce1bb440256e30f",
+      "published": 1794964484
+    }
+  ]
+}
