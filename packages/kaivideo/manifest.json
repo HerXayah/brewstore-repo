@@ -4,14 +4,14 @@
       "name": "kaivideo",
       "title": "KaiVideo",
       "author": "Mizuiro",
-      "description": "Video player for Switch 2: your films and series as a library, hardware decoding (H.264, VP9, AV1), HEVC on the CPU, subtitles, sound tracks, resume and next episode.",
+      "description": "Video player for Switch 2: your films and series as a library, hardware decoding (H.264, VP9, AV1), HEVC on the CPU, Jellyfin, subtitles, sound tracks, resume and next episode.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kaivideo/main/icon.jpg",
-      "version": "v1.3.0",
+      "version": "v1.4.0",
       "url": "https://github.com/mizuiroame/kaivideo",
       "release": "latest",
       "asset": "",
-      "sha256": "845ea7ad7cdf9c9b2d705293e73d7d5482c4d3877bb61bc685b6cd5e1c4c5911",
-      "published": 1795035274
+      "sha256": "6b9cb369bad48602dd4628069606cacf34ac4b4b2e3c0d4c0a70e283a7e97c2a",
+      "published": 1795044572
     }
   ]
 }
