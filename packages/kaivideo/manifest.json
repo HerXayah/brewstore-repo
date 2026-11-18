@@ -6,12 +6,12 @@
       "author": "Mizuiro",
       "description": "Video player for Switch 2: your films and series as a library, hardware decoding (H.264, VP9, AV1), subtitles, sound tracks, resume and next episode.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kaivideo/main/icon.jpg",
-      "version": "v1.1.0",
+      "version": "v1.2.0",
       "url": "https://github.com/mizuiroame/kaivideo",
       "release": "latest",
       "asset": "",
-      "sha256": "c2b9f197fca1769b97215ef049dee61bcc8dd697bc93527eec7a254252445043",
-      "published": 1795025286
+      "sha256": "80b34761da61e87378c7e8391338cca6eda94ddc6798fbee40a93b96c802b463",
+      "published": 1795028663
     }
   ]
 }
