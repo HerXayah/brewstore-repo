@@ -5,14 +5,14 @@
       "title": "Brewstore",
       "author": "HerXayah",
       "description": "Homebrew store for Nintendo Switch 2.",
-      "version": "1.1",
+      "version": "1.1.1",
       "url": "https://github.com/HerXayah/brewstore",
       "release": "latest",
       "asset": "brewstore.nro",
       "target": "sdmc:/switch",
       "marker": "sdmc:/switch/brewstore.nro",
-      "sha256": "8ba172e8fa29273018520ce52a9fae5f07194180d0177c8dd380d8141d29f9fb",
-      "published": 1794960527
+      "sha256": "6b0ae0ee508c0a16af7ab3a570f888b9a29267e4f09df0da63bc635a2717ed7c",
+      "published": 1794962968
     }
   ]
 }
