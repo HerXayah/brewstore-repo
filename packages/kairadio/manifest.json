@@ -6,12 +6,12 @@
       "author": "Mizuiro",
       "description": "Internet radio for Switch 2: tens of thousands of stations from Radio Browser, a world map, favorites, HLS.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kairadio/main/icon.jpg",
-      "version": "v1.0.0",
+      "version": "v1.0.1",
       "url": "https://github.com/mizuiroame/kairadio",
       "release": "latest",
       "asset": "",
-      "sha256": "4f349f1978fd57dd61b23b46c3e634f70a6b6900aa07c170c8a2715c3399e768",
-      "published": 1794957907
+      "sha256": "4f8140b66b793fddb2637132869d720d37e7080c2a19cea7cf7a70decef0a0a5",
+      "published": 1795029086
     }
   ]
 }
