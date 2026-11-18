@@ -10,7 +10,8 @@
       "release": "latest",
       "asset": "melee-switch2-port.nro",
       "target": "sdmc:/switch",
-      "sha256": "2fb5347a31e3c5248e9abe79b0b765061b27c0c3788eda4be45c69191b77407d"
+      "sha256": "2fb5347a31e3c5248e9abe79b0b765061b27c0c3788eda4be45c69191b77407d",
+      "published": 1794955554
     }
   ]
 }

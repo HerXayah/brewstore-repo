@@ -10,7 +10,8 @@
       "release": "latest",
       "asset": "nhse.nro",
       "target": "sdmc:/switch",
-      "sha256": "72ba04aa5d9b4715f604447d209930ab842591aaedae26ba6f33a50632fd811b"
+      "sha256": "72ba04aa5d9b4715f604447d209930ab842591aaedae26ba6f33a50632fd811b",
+      "published": 1794632246
     }
   ]
 }

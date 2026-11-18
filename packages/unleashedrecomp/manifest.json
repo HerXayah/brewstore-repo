@@ -10,7 +10,8 @@
       "release": "latest",
       "asset": "UnleashedRecomp.nro",
       "target": "sdmc:/switch",
-      "sha256": "885f9e9f7b3ddf882d1ca92849af6938c8d4c2bd96e3ffcaaa44968fd1a8327a"
+      "sha256": "885f9e9f7b3ddf882d1ca92849af6938c8d4c2bd96e3ffcaaa44968fd1a8327a",
+      "published": 1794777484
     }
   ]
 }

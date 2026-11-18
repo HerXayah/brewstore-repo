@@ -11,7 +11,8 @@
       "release": "latest",
       "asset": "sw2transfer.nro",
       "target": "sdmc:/switch/sw2transfer",
-      "sha256": "f7def19f34318dd1ef8f82126dde040edd410360768f7c6f547d2bf5df15ca08"
+      "sha256": "f7def19f34318dd1ef8f82126dde040edd410360768f7c6f547d2bf5df15ca08",
+      "published": 1794956527
     }
   ]
 }

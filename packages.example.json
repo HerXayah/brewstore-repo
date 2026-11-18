@@ -11,7 +11,8 @@
       "release": "latest",
       "asset": "",
       "branch": "main",
-      "sha256": ""
+      "sha256": "",
+      "published": 1763425249
     },
     {
       "name": "direct-archive",
@@ -22,7 +23,8 @@
       "version": "1.0.0",
       "url": "https://codeload.github.com/example/example/zip/refs/heads/main",
       "asset": "example.zip",
-      "sha256": ""
+      "sha256": "",
+      "published": 1763425249
     }
   ]
 }

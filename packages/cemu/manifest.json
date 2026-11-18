@@ -11,7 +11,8 @@
       "asset": "cemu-switch2.nro",
       "target": "sdmc:/switch/cemu",
       "marker": "sdmc:/switch/cemu/cemu-switch2.nro",
-      "sha256": "bfa655a600ed5d59472cd043a668c602e4e01be7387e73073ed4f34f154d641f"
+      "sha256": "bfa655a600ed5d59472cd043a668c602e4e01be7387e73073ed4f34f154d641f",
+      "published": 1794956260
     }
   ]
 }

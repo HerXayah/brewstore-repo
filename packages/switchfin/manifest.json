@@ -11,7 +11,8 @@
       "asset": "SwitchfinNX2.nro",
       "target": "sdmc:/switch/SwitchfinNX2",
       "marker": "sdmc:/switch/SwitchfinNX2/SwitchfinNX2.nro",
-      "sha256": "fadcda79e093252d00acee098d65c5d080245620e1e76ea47ca3db798e9cc4fa"
+      "sha256": "fadcda79e093252d00acee098d65c5d080245620e1e76ea47ca3db798e9cc4fa",
+      "published": 1794887298
     }
   ]
 }

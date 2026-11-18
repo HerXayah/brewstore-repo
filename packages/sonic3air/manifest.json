@@ -9,7 +9,8 @@
       "url": "https://github.com/NerdsMcGee/sonic3air-s2",
       "release": "latest",
       "asset": "",
-      "sha256": "f486fe848c7c86debf6f6de633080c8c55202f0de676d3205e3ba63e4ebdadc7"
+      "sha256": "f486fe848c7c86debf6f6de633080c8c55202f0de676d3205e3ba63e4ebdadc7",
+      "published": 1794673055
     }
   ]
 }

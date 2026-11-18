@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Refresh package manifests from their latest GitHub release."""
+import datetime
 import json
 import os
 import re
@@ -49,6 +50,14 @@ def select_asset(assets, hint):
     return None
 
 
+def normalized_version(tag):
+    """Release tags are not always semver; Brewstore compares versions."""
+    for prefix in ("switch2-v", "switch2-"):
+        if tag.lower().startswith(prefix):
+            return tag[len(prefix):]
+    return tag
+
+
 def digest_hex(asset):
     digest = asset.get("digest") or ""
     if digest.startswith("sha256:"):
@@ -56,6 +65,15 @@ def digest_hex(asset):
     if len(digest) == 64 and re.fullmatch(r"[0-9a-fA-F]{64}", digest):
         return digest.lower()
     return ""
+
+
+def published_epoch(value):
+    if not value:
+        return 0
+    try:
+        return int(datetime.datetime.fromisoformat(value.replace("Z", "+00:00")).timestamp())
+    except ValueError:
+        return 0
 
 
 def gitlab_release(url):
@@ -72,7 +90,8 @@ def gitlab_release(url):
         {"name": link.get("name", ""), "url": link.get("direct_asset_url") or link.get("url", "")}
         for link in links
     ]
-    return release.get("tag_name", ""), assets
+    return release.get("tag_name", ""), assets, published_epoch(
+        release.get("released_at") or release.get("created_at"))
 
 
 def gitlab_digest(assets, name):
@@ -100,7 +119,8 @@ def main():
                 if not release:
                     print(f"{package['name']}: no releases")
                     continue
-                version, assets = release
+                version, assets, published = release
+                version = normalized_version(version)
                 asset = select_asset(assets, package.get("asset", ""))
                 if not asset:
                     print(f"{package['name']}: no matching asset")
@@ -126,7 +146,8 @@ def main():
                 if not asset:
                     print(f"{package['name']}: no matching asset")
                     continue
-                version = release.get("tag_name", "")
+                version = normalized_version(release.get("tag_name", ""))
+                published = published_epoch(release.get("published_at"))
                 sha256 = digest_hex(asset)
             if not version:
                 continue
@@ -136,7 +157,11 @@ def main():
             if sha256 and package.get("sha256") != sha256:
                 package["sha256"] = sha256
                 changed += 1
-            print(f"{package['name']}: {version} {sha256 or '(no digest)'}")
+            if published and package.get("published") != published:
+                package["published"] = published
+                changed += 1
+            print(f"{package['name']}: {version} {sha256 or '(no digest)'} "
+                  f"{published or '(no published timestamp)'}")
         path.write_text(json.dumps(data, indent=2) + "\n")
     print(f"updated fields: {changed}")
     return 0

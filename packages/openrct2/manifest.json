@@ -10,7 +10,8 @@
       "release": "latest",
       "asset": "openrct2.nro",
       "target": "sdmc:/switch/openrct2",
-      "sha256": "9c129e383c5f48186ca46a10e7ed1c221e4057b8e4943bff01a8a2d18a7782f4"
+      "sha256": "9c129e383c5f48186ca46a10e7ed1c221e4057b8e4943bff01a8a2d18a7782f4",
+      "published": 1794779104
     }
   ]
 }

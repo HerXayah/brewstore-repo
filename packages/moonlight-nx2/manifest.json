@@ -10,7 +10,8 @@
       "release": "latest",
       "asset": "",
       "target": "sdmc:/switch/moonlight-nx2",
-      "sha256": "ebb6d8c3a3031546788718306194a41799c1a6b8895786c98d8247312f18db31"
+      "sha256": "ebb6d8c3a3031546788718306194a41799c1a6b8895786c98d8247312f18db31",
+      "published": 1794820626
     }
   ]
 }

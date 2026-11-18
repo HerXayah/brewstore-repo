@@ -11,7 +11,8 @@
       "release": "latest",
       "asset": "sw2snes.nro",
       "target": "sdmc:/switch/sw2snes",
-      "sha256": "ed1e8a246bc2ea9ba8a5772206fcbed83fdcc73b186dbc131b9be2494880c2fb"
+      "sha256": "ed1e8a246bc2ea9ba8a5772206fcbed83fdcc73b186dbc131b9be2494880c2fb",
+      "published": 1794700588
     }
   ]
 }

@@ -25,6 +25,7 @@ Manifests may include:
 
 ```json
 "version": "v1.2.3",
+"published": 1763425249,
 "sha256": "<64 hex characters>",
 "asset": "optional-asset-name.zip"
 ```
@@ -33,8 +34,11 @@ Manifests may include:
 lets brewstore detect updates with the cached catalog and no GitHub API calls
 from the console.
 
-The scheduled workflow `.github/workflows/update-manifests.yml` refreshes
-`version` and `sha256` from each package's latest GitHub release using the
+`published` is the release publication time in Unix seconds. Brewstore uses it
+for the **Updated newest** sort; manifests without it fall back to the local
+install/update time. The scheduled workflow
+`.github/workflows/update-manifests.yml` refreshes `version`, `sha256` and
+`published` from each package's latest GitHub/GitLab release using the
 workflow's own token.
 
 ## Install layout

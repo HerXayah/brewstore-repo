@@ -11,7 +11,8 @@
       "asset": "blacklist-tool-switch2.nro",
       "target": "sdmc:/switch/blacklist-tool",
       "marker": "sdmc:/switch/blacklist-tool/blacklist-tool-switch2.nro",
-      "sha256": "719bcb90a7251014e41633b14cf093bd32cea8eccf6c605a8d0b91b81391a787"
+      "sha256": "719bcb90a7251014e41633b14cf093bd32cea8eccf6c605a8d0b91b81391a787",
+      "published": 1794944480
     }
   ]
 }

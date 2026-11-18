@@ -10,7 +10,8 @@
       "release": "latest",
       "asset": "kaizhar.nro",
       "target": "sdmc:/switch",
-      "sha256": "820fc60524cb7ec289144ca65929c64d2bf4c0a86a8d7887a63befa4d5b73d75"
+      "sha256": "820fc60524cb7ec289144ca65929c64d2bf4c0a86a8d7887a63befa4d5b73d75",
+      "published": 1794652449
     }
   ]
 }

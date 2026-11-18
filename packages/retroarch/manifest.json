@@ -11,7 +11,8 @@
       "asset": "",
       "target": "sdmc:/",
       "marker": "sdmc:/switch/retroarch/retroarch_switch.nro",
-      "sha256": "3d94aba2c12d298c627ed4e82b4d3d94e31447bb861f973aa3a2b56ac8861337"
+      "sha256": "3d94aba2c12d298c627ed4e82b4d3d94e31447bb861f973aa3a2b56ac8861337",
+      "published": 1794961249
     }
   ]
 }

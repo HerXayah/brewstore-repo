@@ -11,7 +11,8 @@
       "release": "latest",
       "asset": "sw2nes.nro",
       "target": "sdmc:/switch/sw2nes",
-      "sha256": "661f55474fa9d7dc9dc2f0f63902147ffbebf1022f6471b72fa1991137a1f33a"
+      "sha256": "661f55474fa9d7dc9dc2f0f63902147ffbebf1022f6471b72fa1991137a1f33a",
+      "published": 1794700611
     }
   ]
 }

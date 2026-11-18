@@ -10,7 +10,8 @@
       "release": "latest",
       "asset": "nces-switch2.nro",
       "target": "sdmc:/switch",
-      "sha256": "92325e17e71faa6d8f74a9e941c0b82b19118b31d0024c2131ebd3ec6b8fa384"
+      "sha256": "92325e17e71faa6d8f74a9e941c0b82b19118b31d0024c2131ebd3ec6b8fa384",
+      "published": 1794694412
     }
   ]
 }

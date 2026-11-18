@@ -10,7 +10,8 @@
       "release": "latest",
       "asset": "abreloaded_nx2.zip",
       "target": "sdmc:/switch/abreloaded",
-      "sha256": "aafef90f63f501988f5382eaf100275ae3546fbe42f1f3d1b62bf38776e30972"
+      "sha256": "aafef90f63f501988f5382eaf100275ae3546fbe42f1f3d1b62bf38776e30972",
+      "published": 1794698065
     }
   ]
 }
