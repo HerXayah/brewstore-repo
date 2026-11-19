@@ -1,0 +1,20 @@
+{
+  "packages": [
+    {
+      "name": "starship",
+      "title": "Starship",
+      "author": "mysterypaintwo",
+      "description": "Star Fox 64 native port for Switch 2. Requires your own game data.",
+      "icon": "https://raw.githubusercontent.com/mysterypaintwo/Starship-Switch2/main/logo.png",
+      "version": "v1.0-prerelease",
+      "url": "https://github.com/mysterypaintwo/Starship-Switch2",
+      "release": "latest",
+      "asset": "starship-switch2-v1.0-prerelease.zip",
+      "target": "sdmc:/switch/starship",
+      "marker": "sdmc:/switch/starship/Starship.nro",
+      "sha256": "898252e155fb79c92ebf6e7d8d55d9e8bcbb43bcccd0dc7f8ceccf598f0ddf7b",
+      "published": 1795037094,
+      "stripPrefix": "switch/starship/"
+    }
+  ]
+}

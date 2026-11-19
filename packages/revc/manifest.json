@@ -1,0 +1,20 @@
+{
+  "packages": [
+    {
+      "name": "revc",
+      "title": "reVC",
+      "author": "Bryce4643",
+      "description": "Grand Theft Auto: Vice City reVC port for Switch 2. Requires your own PC game files.",
+      "icon": "https://raw.githubusercontent.com/Bryce4643/reVC-ounce-port/main/logo_1024.png",
+      "version": "v1.0.1",
+      "url": "https://github.com/Bryce4643/reVC-ounce-port",
+      "release": "latest",
+      "asset": "reVC-oal-switch2.tar.xz",
+      "target": "sdmc:/switch/reVC",
+      "stripPrefix": "reVC-oal-switch/",
+      "marker": "sdmc:/switch/reVC/reVC.nro",
+      "sha256": "e5069502100eb33190d6d5947260979e4b5a17e4452ccfcff8460ffaf439acd0",
+      "published": 1794718802
+    }
+  ]
+}

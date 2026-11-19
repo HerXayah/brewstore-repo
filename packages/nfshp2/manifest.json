@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "nfshp2",
+      "title": "NFS: Hot Pursuit 2",
+      "author": "HDErick",
+      "description": "Native Need for Speed: Hot Pursuit 2 port for Switch 2. Requires PlayStation 2 PAL 1.00 game data.",
+      "icon": "https://raw.githubusercontent.com/HDErick/NFSHP2_Switch_Port/main/icon.png",
+      "version": "v1.0",
+      "url": "https://github.com/HDErick/NFSHP2_Switch_Port",
+      "release": "latest",
+      "asset": "NFSHP2-Switch2.nro",
+      "target": "sdmc:/switch/NFSHP2-Switch2",
+      "marker": "sdmc:/switch/NFSHP2-Switch2/NFSHP2-Switch2.nro",
+      "sha256": "f377ac6b8e694bf1510b19c301d07dfddd337dce00384cf0c94473c90cbe44b6",
+      "published": 1794988840
+    }
+  ]
+}

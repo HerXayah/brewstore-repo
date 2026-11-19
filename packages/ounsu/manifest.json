@@ -1,0 +1,20 @@
+{
+  "packages": [
+    {
+      "name": "ounsu",
+      "title": "ounsu!",
+      "author": "NoelleTGS",
+      "description": "Unofficial osu!lazer port for Switch 2.",
+      "icon": "https://raw.githubusercontent.com/NoelleTGS/ounsu/main/console/osu-game/icon.jpg",
+      "version": "2026.1117.0",
+      "url": "https://github.com/NoelleTGS/ounsu",
+      "release": "latest",
+      "asset": "ounsu-2026.1117.0.zip",
+      "target": "sdmc:/switch/ounsu",
+      "marker": "sdmc:/switch/ounsu/ounsu.nro",
+      "sha256": "f8ee9fdbb015dd516141382b25f6dd3a2d82c26119f6a92f2156b55eec169f8d",
+      "published": 1794945064,
+      "stripPrefix": "switch/ounsu/"
+    }
+  ]
+}

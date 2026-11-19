@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "ouncemtp",
+      "title": "OunceMTP",
+      "author": "venustrikes",
+      "description": "Transfer files between your PC and the Switch 2 SD card over USB with MTP.",
+      "icon": "https://raw.githubusercontent.com/venustrikes/ouncemtp/main/icon.jpg",
+      "version": "v1.0.0",
+      "url": "https://github.com/venustrikes/ouncemtp",
+      "release": "latest",
+      "asset": "ouncemtp.nro",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/ouncemtp.nro",
+      "sha256": "7b4ffab4396f6d94f9832f8301ccf3dff5fdf20ae3f8c0ff6e91a04a58acab17",
+      "published": 1794925255
+    }
+  ]
+}

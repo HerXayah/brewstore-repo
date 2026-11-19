@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "openblops",
+      "title": "OpenBLOPS-NX",
+      "author": "HDErick, NaGaa95",
+      "description": "Call of Duty: Black Ops reconstruction for Switch 2. Campaign, multiplayer and zombies; requires your own PC game data.",
+      "version": "1.0.0",
+      "url": "https://github.com/HDErick/OpenBLOPS-NX",
+      "release": "latest",
+      "asset": "OpenBLOPS-NX2.zip",
+      "target": "sdmc:/switch/OpenBLOPS-NX2",
+      "marker": "sdmc:/switch/OpenBLOPS-NX2/OpenBLOPS-NX2.nro",
+      "sha256": "71ad5fa4cbc6d41aefbbd304175ba21e2f8a7c76e6eb2cfe5dc4311ab98de547",
+      "published": 1794884711,
+      "stripPrefix": "switch/OpenBLOPS-NX2/"
+    }
+  ]
+}

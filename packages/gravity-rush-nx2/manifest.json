@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "gravity-rush-nx2",
+      "title": "Gravity Rush",
+      "author": "Bryce4643",
+      "description": "Gravity Rush PlayStation Vita port for Switch 2, based on Vita3K-nx. Requires your own game and firmware files.",
+      "version": "v1.0.0",
+      "url": "https://github.com/Bryce4643/Gravity-Rush-NX2",
+      "release": "latest",
+      "asset": "GravityRush-NX2-v1.0.0.zip",
+      "target": "sdmc:/switch/gravityrush",
+      "stripPrefix": "GravityRush-NX2-v1.0.0/switch/gravityrush/",
+      "marker": "sdmc:/switch/gravityrush/GravityRush.nro",
+      "sha256": "418ed4a139fe00e97efcf3f94ddfe23502f67921b600560a6a070dd2ceabf639",
+      "published": 1795000275
+    }
+  ]
+}

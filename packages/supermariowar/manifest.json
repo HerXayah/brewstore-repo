@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "supermariowar",
+      "title": "Super Mario War",
+      "author": "HunterMario",
+      "description": "Switch 2 port of Super Mario War, a multiplayer Super Mario party game.",
+      "icon": "https://raw.githubusercontent.com/HunterMario/supermariowar-oz/master/icon.jpg",
+      "version": "2.0.0-oz5",
+      "url": "https://github.com/HunterMario/supermariowar-oz",
+      "release": "latest",
+      "asset": "supermariowar-oz.zip",
+      "target": "sdmc:/",
+      "marker": "sdmc:/switch/smw.nro",
+      "sha256": "baac1fb1c7df8ee4518007501c1431d677925bb5fe491236d77f11ef17f679c9",
+      "published": 1795027404
+    }
+  ]
+}

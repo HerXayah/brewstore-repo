@@ -41,12 +41,13 @@ def select_asset(assets, hint):
     for asset in assets:
         if asset["name"].lower().endswith(".nro"):
             return asset
-    for asset in assets:
-        name = asset["name"].lower()
-        if name.endswith(".zip") and not any(
-            word in name for word in ("debug", "symbols", "source")
-        ):
-            return asset
+    for suffix in (".zip", ".tar", ".tar.gz", ".tgz", ".tar.xz", ".txz"):
+        for asset in assets:
+            name = asset["name"].lower()
+            if name.endswith(suffix) and not any(
+                word in name for word in ("debug", "symbols", "source")
+            ):
+                return asset
     return None
 
 
