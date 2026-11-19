@@ -1,0 +1,20 @@
+{
+  "packages": [
+    {
+      "name": "sphaira",
+      "title": "Sphaira",
+      "author": "NaGaa95",
+      "description": "Homebrew menu replacement for Switch 2.",
+      "icon": "https://raw.githubusercontent.com/NaGaa95/sphaira/master/assets/icon.jpg",
+      "version": "1.1.1",
+      "url": "https://github.com/NaGaa95/sphaira",
+      "release": "latest",
+      "asset": "sphaira.zip",
+      "target": "sdmc:/switch/sphaira",
+      "stripPrefix": "nx2/switch/sphaira/",
+      "marker": "sdmc:/switch/sphaira/sphaira.nro",
+      "sha256": "776eed26cfc46545e07ab04379761eec787dbad1fecde09321cc35ff9dbfc9df",
+      "published": 1795047043
+    }
+  ]
+}
