@@ -5,11 +5,11 @@
       "title": "Chiaki-ng/Akira",
       "author": "xlanor, streetpea, kkwong, and others",
       "description": "Chiaki-ng remote streaming client.",
-      "version": "v0.2.2",
+      "version": "v0.3.0",
       "url": "https://github.com/chiaki-ng/akira-ounce",
       "release": "latest",
-      "sha256": "99f8d209de187a2699936a79162fa6220cab236788c7b901423bafcccd0c9a25",
-      "published": 1794784813
+      "sha256": "25e86080f5cd8f719351fd98c87bafacc9fafdeb3a47a89a9aa29281f3ffe95a",
+      "published": 1795050231
     }
   ]
 }
