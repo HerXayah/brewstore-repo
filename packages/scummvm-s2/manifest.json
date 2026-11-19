@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "scummvm-s2",
+      "title": "ScummVM-S2",
+      "author": "ScummVM Team, Netfreak25",
+      "description": "Unofficial ScummVM port for Switch 2 with Joy-Con 2 mouse support. Bring your own game data.",
+      "icon": "https://raw.githubusercontent.com/Netfreak25/scummvm-s2/v2026.4.0-s2.5/dists/switch/icon.jpg",
+      "version": "v2026.4.0-s2.5",
+      "url": "https://github.com/Netfreak25/scummvm-s2",
+      "release": "latest",
+      "asset": "default-engines.zip",
+      "target": "sdmc:/switch/scummvm",
+      "marker": "sdmc:/switch/scummvm/scummvm.nro",
+      "sha256": "0b82c8cae25bab4aaafbcc1283b8292a51b483631ba9d8ad990d752a29e88a08",
+      "published": 1795097124
+    }
+  ]
+}
