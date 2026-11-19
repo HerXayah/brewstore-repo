@@ -4,14 +4,14 @@
       "name": "kaivideo",
       "title": "KaiVideo",
       "author": "Mizuiro",
-      "description": "Video player for Switch 2 with Jellyfin support: your films and series from the SD card or a Jellyfin server, hardware decoding (H.264, VP9, AV1), HEVC on the CPU, subtitles, sound tracks, resume and next episode.",
+      "description": "Video player for Switch 2 with Jellyfin support: your films and series from the SD card or a Jellyfin server, hardware decoding (H.264, VP9, AV1), HEVC on the CPU, 4K and HDR through the server, subtitles, sound tracks, resume and next episode.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kaivideo/main/icon.jpg",
-      "version": "v1.4.0",
+      "version": "v1.5.0",
       "url": "https://github.com/mizuiroame/kaivideo",
       "release": "latest",
       "asset": "",
-      "sha256": "6b9cb369bad48602dd4628069606cacf34ac4b4b2e3c0d4c0a70e283a7e97c2a",
-      "published": 1795044572
+      "sha256": "22c62e72c3f82fc7a265db986f5d3531cee2c0eb8cee45c227104d0482b1957d",
+      "published": 1795060802
     }
   ]
 }
