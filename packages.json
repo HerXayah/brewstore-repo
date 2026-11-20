@@ -51,6 +51,10 @@
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/revc/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/sphaira/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/hbmenu/manifest.json",
-    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/scummvm-s2/manifest.json"
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/scummvm-s2/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaidump/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/psp2i/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/devilutionx/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/chromium-nx/manifest.json"
   ]
 }

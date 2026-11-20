@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "kaidump",
+      "title": "KaiDump",
+      "author": "BlafKing",
+      "description": "Graphical title dumper for kaiHEN with SD, FTP and USB export, TAR and NUP output.",
+      "icon": "https://raw.githubusercontent.com/BlafKing/KaiDump/main/assets/icon.jpg",
+      "version": "1.0.5",
+      "url": "https://github.com/BlafKing/KaiDump",
+      "release": "latest",
+      "asset": "KaiDump.nro",
+      "target": "sdmc:/switch/KaiDump",
+      "marker": "sdmc:/switch/KaiDump/KaiDump.nro",
+      "sha256": "7bc870f90065c4ce5786b0ba11a0a5258bd6cd7189fe57ad0d67723740d5cff0",
+      "published": 1795140972
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "devilutionx",
+      "title": "DevilutionX",
+      "author": "Cerebral-Context",
+      "description": "Unofficial DevilutionX port for Switch 2. Requires DIABDAT.MPQ from your own Diablo copy.",
+      "icon": "https://raw.githubusercontent.com/Cerebral-Context/DevilutionX/master/Packaging/switch/icon.jpg",
+      "version": "Switch-2-port",
+      "url": "https://github.com/Cerebral-Context/DevilutionX",
+      "release": "latest",
+      "asset": "devilutionx.nro",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/devilutionx.nro",
+      "sha256": "a359e948c6940bec70bc6b619bedf5e676717093aaa07dee5af64adf24f397ff",
+      "published": 1795124218
+    }
+  ]
+}
