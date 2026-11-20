@@ -19,7 +19,8 @@ def request_json(url):
         "User-Agent": "brewstore-catalog",
         "X-GitHub-Api-Version": "2022-11-28",
     }
-    if TOKEN:
+    # The GitHub token is invalid on GitLab and makes its API return 401.
+    if TOKEN and url.startswith("https://api.github.com/"):
         headers["Authorization"] = f"Bearer {TOKEN}"
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=30) as response:
@@ -134,7 +135,7 @@ def main():
                 owner, repo = match.group(1), match.group(2)
                 try:
                     releases = request_json(
-                        f"https://api.github.com/repos/{owner}/{repo}/releases?per_page=1"
+                        f"https://api.github.com/repos/{owner}/{repo}/releases?per_page=10"
                     )
                 except Exception as error:
                     print(f"{package['name']}: release lookup failed: {error}", file=sys.stderr)
@@ -142,9 +143,16 @@ def main():
                 if not releases:
                     print(f"{package['name']}: no releases")
                     continue
-                release = releases[0]
-                asset = select_asset(release.get("assets", []), package.get("asset", ""))
-                if not asset:
+                release = None
+                asset = None
+                for candidate in releases:
+                    selected = select_asset(candidate.get("assets", []),
+                                            package.get("asset", ""))
+                    if selected:
+                        release = candidate
+                        asset = selected
+                        break
+                if not release:
                     print(f"{package['name']}: no matching asset")
                     continue
                 version = normalized_version(release.get("tag_name", ""))

@@ -5,13 +5,13 @@
       "title": "Angry Birds Reloaded",
       "author": "githubuser77777",
       "description": "Angry Birds Reloaded port for Switch 2.",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "url": "https://github.com/githubuser77777/abreloaded_nx2",
       "release": "latest",
-      "asset": "abreloaded_nx2.zip",
+      "asset": "abreloaded_nx.nro",
       "target": "sdmc:/switch/abreloaded",
-      "sha256": "aafef90f63f501988f5382eaf100275ae3546fbe42f1f3d1b62bf38776e30972",
-      "published": 1794698065
+      "sha256": "9f276f2ab731a15db118ffd46d79b1086dd4f1dd7376ddabc95df1e4ee63e482",
+      "published": 1795074761
     }
   ]
 }
