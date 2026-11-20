@@ -5,14 +5,14 @@
       "title": "Switchfin",
       "author": "Lucaspec72",
       "description": "Third-party native Jellyfin client for Switch 2.",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "url": "https://github.com/Lucaspec72/switchfin",
       "release": "latest",
       "asset": "SwitchfinNX2.nro",
       "target": "sdmc:/switch/SwitchfinNX2",
       "marker": "sdmc:/switch/SwitchfinNX2/SwitchfinNX2.nro",
-      "sha256": "fadcda79e093252d00acee098d65c5d080245620e1e76ea47ca3db798e9cc4fa",
-      "published": 1794887298
+      "sha256": "6126a9f40a040d1bd1314bd9e2a4c5a76162f281f8cd91c5fb2581ca7b500f11",
+      "published": 1795176207
     }
   ]
 }
