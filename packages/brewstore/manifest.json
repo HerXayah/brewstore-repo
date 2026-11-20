@@ -11,7 +11,7 @@
       "asset": "brewstore.nro",
       "target": "sdmc:/switch",
       "marker": "sdmc:/switch/brewstore.nro",
-      "sha256": "b039a564719d7e38917ef5acdae01cd26bdf4879032bf123a5b6ccae65424d4c",
+      "sha256": "61010bceb321683bda715010e5d81d93f4e7373f0b37931e2ad6aa0aed958cfd",
       "published": 1795172384
     }
   ]
