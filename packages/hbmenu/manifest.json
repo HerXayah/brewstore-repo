@@ -5,15 +5,15 @@
       "title": "hbmenu",
       "author": "HerXayah / nx-hbmenu",
       "description": "Custom homebrew menu for kaiHEN.",
-      "version": "1.1",
+      "version": "1.2",
       "url": "https://github.com/HerXayah/brewstore-repo",
       "release": "latest",
       "asset": "hbmenu.nro",
       "target": "sdmc:/",
       "marker": "sdmc:/hbmenu.nro",
       "shortcut": false,
-      "sha256": "5e21ae75f95438311ee20380290200efa9341f6834409a846af58e7a1426a1eb",
-      "published": 1795089775
+      "sha256": "53e3a3c630cdfcd4ea96e756ff4a3076af59cfeef7ae47e876c34ad555430342",
+      "published": 1795171718
     }
   ]
 }
