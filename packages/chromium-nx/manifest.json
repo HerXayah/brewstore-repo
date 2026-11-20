@@ -5,7 +5,7 @@
       "title": "Chromium NX",
       "author": "shodowlo",
       "description": "Experimental Chromium browser for Switch 2 under kaiHEN. Downloads its 411 MB Chromium image on first launch.",
-      "icon": "https://raw.githubusercontent.com/shodowlo/chromium-nx/main/assets/chromium-nx-banner.png",
+      "icon": "https://raw.githubusercontent.com/shodowlo/chromium-nx/main/assets/chromium-nx-logo.png",
       "version": "v0.2.0",
       "url": "https://github.com/shodowlo/chromium-nx",
       "release": "latest",
