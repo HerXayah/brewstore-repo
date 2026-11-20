@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "pkforge",
+      "title": "PKForge",
+      "author": "sh00kapic, sofianeelhor",
+      "description": "Offline Pokemon save editor for Switch 2. Supports mainline saves, boxes, trainer data, bags and Mystery Gifts.",
+      "icon": "https://raw.githubusercontent.com/sh00kapic/PKForge-Switch2/switch2/libounce/switch2/icon.jpg",
+      "version": "v0.7.3",
+      "url": "https://github.com/sh00kapic/PKForge-Switch2",
+      "release": "latest",
+      "asset": "PKForge.nro",
+      "target": "sdmc:/switch/PKForge",
+      "marker": "sdmc:/switch/PKForge/PKForge.nro",
+      "sha256": "8b23a0134aeae3de742a080f122b06e438d7ec41095ebf26c7034a08f73508b7",
+      "published": 1795172166
+    }
+  ]
+}

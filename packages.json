@@ -55,6 +55,7 @@
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaidump/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/psp2i/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/devilutionx/manifest.json",
-    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/chromium-nx/manifest.json"
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/chromium-nx/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/pkforge/manifest.json"
   ]
 }
