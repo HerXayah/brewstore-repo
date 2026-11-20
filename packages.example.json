@@ -24,7 +24,7 @@
       "author": "Example Author", // <Optional> displayed author
       "description": "Shows a direct archive URL instead of a GitHub repository URL.", // <Optional> shop card text
       "icon": "", // <Optional> empty = placeholder icon
-      "version": "1.0.0", // <Optional> manual version for direct downloads
+      "version": "1.0.0", // <Required> manual version for direct downloads
       "url": "https://codeload.github.com/example/example/zip/refs/heads/main", // <Required> direct HTTPS archive
       "asset": "example.zip", // <Optional> downloaded filename hint
       "branch": "main", // <Optional> unused for direct URLs
