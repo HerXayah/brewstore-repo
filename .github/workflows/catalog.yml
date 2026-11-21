@@ -1,0 +1,151 @@
+name: Catalogue
+
+on:
+  schedule:
+    - cron: "17 */8 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "packages/**/manifest.json"
+  pull_request:
+    paths:
+      - "packages/**/manifest.json"
+      - "scripts/build_catalog.py"
+      - "scripts/update_manifests.py"
+      - "scripts/propose_bumps.py"
+      - "tests/**"
+      - ".github/workflows/catalog.yml"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: brewstore-catalogue
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate manifests
+        run: python3 scripts/build_catalog.py --validate-only
+      - name: Run Python tests
+        run: python3 -m unittest discover -s tests
+      - name: Run pyflakes
+        run: |
+          python3 -m pip install --quiet pyflakes
+          python3 -m pyflakes scripts/
+      - name: Resolve changed packages
+        id: changed
+        shell: bash
+        run: |
+          names=$(git diff --name-only "${{ github.event.pull_request.base.sha }}...HEAD" -- 'packages/**/manifest.json' \
+            | sed -E 's#^packages/([^/]+)/manifest.json$#\1#' | sort -u | paste -sd, -)
+          test -z "$names" || echo "names=$names" >> "$GITHUB_OUTPUT"
+      - name: Strict check changed packages
+        if: steps.changed.outputs.names != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build_catalog.py --strict --only "${{ steps.changed.outputs.names }}"
+
+  update:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Refresh manifests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_manifests.py
+      - name: Build catalogue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build_catalog.py
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- packages catalog.json packages.json; then
+            exit 0
+          fi
+          git add packages catalog.json packages.json
+          git diff --cached --quiet || git commit -m "chore: update package manifests"
+          git push
+
+  propose-bumps:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: update
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Propose bumps
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -u
+          git fetch origin main
+          mapfile -t names < <(python3 -c 'import json,pathlib; print("\n".join(p["name"] for f in pathlib.Path("packages").glob("*/manifest.json") for p in json.loads(f.read_text()).get("packages", []) if isinstance(p.get("name"), str) and str(p.get("release") or "latest").strip().lower() not in ("", "latest")))')
+          for name in "${names[@]}"; do
+            git reset --hard origin/main
+            git clean -fd
+            python3 scripts/propose_bumps.py --only "$name" > /tmp/bump.json
+            if [ ! -s /tmp/bump.json ]; then
+              continue
+            fi
+            read -r pkg old new asset sha url < <(python3 -c 'import json; d=json.load(open("/tmp/bump.json")); print(d["name"], d["old"], d["new"], d["asset"], d["sha256"], d["release_url"])')
+            branch="bump/${pkg}-$(printf '%s' "$new" | tr '/' '-')"
+            if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+              echo "skip: branch $branch already exists"
+              continue
+            fi
+            if [ "$(gh pr list --head "$branch" --state all --json number --jq 'length')" != "0" ]; then
+              echo "skip: PR for $branch already exists"
+              continue
+            fi
+            git checkout -B "$branch" origin/main
+            git add "packages/$pkg/manifest.json"
+            git commit -m "chore: bump $pkg to $new"
+            python3 scripts/build_catalog.py --validate-only
+            python3 scripts/build_catalog.py --strict --only "$pkg"
+            git push origin "$branch"
+            cat > /tmp/bump-body.md <<EOF
+          Pinned release bump for \`$pkg\`.
+          
+          - Old: \`$old\`
+          - New: \`$new\`
+          - Release: $url
+          - Asset: \`$asset\`
+          - SHA-256: \`$sha\`
+          
+          The catalogue is regenerated after merge.
+          EOF
+            gh pr create --base main --head "$branch" \
+              --title "chore: bump $pkg to $new" \
+              --body-file /tmp/bump-body.md
+          done
