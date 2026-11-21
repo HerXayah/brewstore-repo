@@ -4,9 +4,18 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 */6 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "packages/**/manifest.json"
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-manifests
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -20,10 +29,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/update_manifests.py
+      - name: Build catalogue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build_catalog.py
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add packages
+          if git diff --quiet -- packages catalog.json packages.json; then
+            exit 0
+          fi
+          git add packages catalog.json packages.json
           git diff --cached --quiet || git commit -m "chore: update package manifests"
           git push
