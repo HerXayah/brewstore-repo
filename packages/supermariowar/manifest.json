@@ -13,7 +13,8 @@
       "target": "sdmc:/",
       "marker": "sdmc:/switch/smw.nro",
       "sha256": "baac1fb1c7df8ee4518007501c1431d677925bb5fe491236d77f11ef17f679c9",
-      "published": 1795027404
+      "published": 1795027404,
+      "allowUnsafeTarget": true
     }
   ]
 }

@@ -7,7 +7,7 @@ import re
 import sys
 import urllib.parse
 import urllib.request
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
@@ -58,6 +58,28 @@ def normalized_version(tag):
         if tag.lower().startswith(prefix):
             return tag[len(prefix):]
     return tag
+
+
+def expand_template(value, *, tag, version, asset_name="", asset_stem=""):
+    return value.format_map({
+        "release_tag": tag,
+        "tag": tag,
+        "version": version,
+        "asset": asset_name,
+        "asset_stem": asset_stem or PurePosixPath(asset_name).stem,
+    })
+
+
+def asset_hint(package, tag, version):
+    hint = str(package.get("assetTemplate") or package.get("asset") or "")
+    return expand_template(hint, tag=tag, version=version) if "{" in hint else hint
+
+
+def strip_prefix(package, tag, version, asset_name):
+    raw = str(package.get("stripPrefixTemplate") or "")
+    if not raw:
+        return None
+    return expand_template(raw, tag=tag, version=version, asset_name=asset_name)
 
 
 def digest_hex(asset):
@@ -111,6 +133,10 @@ def main():
     for path in sorted((ROOT / "packages").glob("*/manifest.json")):
         data = json.loads(path.read_text())
         for package in data.get("packages", []):
+            pinned = str(package.get("release") or "latest").strip()
+            if pinned and pinned.lower() != "latest":
+                print(f"{package['name']}: pinned to {pinned}; not updating")
+                continue
             url = package.get("url", "")
             if url.startswith("https://gitlab.com/"):
                 try:
@@ -121,9 +147,9 @@ def main():
                 if not release:
                     print(f"{package['name']}: no releases")
                     continue
-                version, assets, published = release
-                version = normalized_version(version)
-                asset = select_asset(assets, package.get("asset", ""))
+                tag, assets, published = release
+                version = normalized_version(tag)
+                asset = select_asset(assets, asset_hint(package, tag, version))
                 if not asset:
                     print(f"{package['name']}: no matching asset")
                     continue
@@ -146,8 +172,12 @@ def main():
                 release = None
                 asset = None
                 for candidate in releases:
-                    selected = select_asset(candidate.get("assets", []),
-                                            package.get("asset", ""))
+                    candidate_tag = candidate.get("tag_name", "")
+                    candidate_version = normalized_version(candidate_tag)
+                    selected = select_asset(
+                        candidate.get("assets", []),
+                        asset_hint(package, candidate_tag, candidate_version),
+                    )
                     if selected:
                         release = candidate
                         asset = selected
@@ -155,11 +185,20 @@ def main():
                 if not release:
                     print(f"{package['name']}: no matching asset")
                     continue
-                version = normalized_version(release.get("tag_name", ""))
+                tag = release.get("tag_name", "")
+                version = normalized_version(tag)
                 published = published_epoch(release.get("published_at"))
                 sha256 = digest_hex(asset)
             if not version:
                 continue
+            if package.get("assetTemplate"):
+                if package.get("asset") != asset["name"]:
+                    package["asset"] = asset["name"]
+                    changed += 1
+            templated_strip = strip_prefix(package, tag, version, asset["name"])
+            if templated_strip is not None and package.get("stripPrefix") != templated_strip:
+                package["stripPrefix"] = templated_strip
+                changed += 1
             if package.get("version") != version:
                 package["version"] = version
                 changed += 1
@@ -171,7 +210,9 @@ def main():
                 changed += 1
             print(f"{package['name']}: {version} {sha256 or '(no digest)'} "
                   f"{published or '(no published timestamp)'}")
-        path.write_text(json.dumps(data, indent=2) + "\n")
+        encoded = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
+        if encoded != path.read_text(encoding="utf-8"):
+            path.write_text(encoded, encoding="utf-8")
     print(f"updated fields: {changed}")
     return 0
 

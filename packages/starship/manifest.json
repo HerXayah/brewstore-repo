@@ -14,7 +14,9 @@
       "marker": "sdmc:/switch/starship/Starship.nro",
       "sha256": "898252e155fb79c92ebf6e7d8d55d9e8bcbb43bcccd0dc7f8ceccf598f0ddf7b",
       "published": 1795037094,
-      "stripPrefix": "switch/starship/"
+      "stripPrefix": "switch/starship/",
+      "prerelease": true,
+      "assetTemplate": "starship-switch2-{release_tag}.zip"
     }
   ]
 }

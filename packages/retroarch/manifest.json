@@ -12,7 +12,8 @@
       "target": "sdmc:/",
       "marker": "sdmc:/switch/retroarch/retroarch_switch.nro",
       "sha256": "5a9b6720b44d8b39720d920a8f6c2ba5d5e81aa1e511d46fcb86830dd9847290",
-      "published": 1795060162
+      "published": 1795060162,
+      "allowUnsafeTarget": true
     }
   ]
 }

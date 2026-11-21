@@ -13,7 +13,8 @@
       "marker": "sdmc:/hbmenu.nro",
       "shortcut": false,
       "sha256": "53e3a3c630cdfcd4ea96e756ff4a3076af59cfeef7ae47e876c34ad555430342",
-      "published": 1795171718
+      "published": 1795171718,
+      "allowUnsafeTarget": true
     }
   ]
 }

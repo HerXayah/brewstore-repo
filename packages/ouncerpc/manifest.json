@@ -15,7 +15,9 @@
       "marker": "sdmc:/kaihen/plugins/ouncerpc.nso",
       "sha256": "59c7fb45bc02ef36e25acd675e6fc0c91f842726218ca203472fbd3011adc878",
       "published": 1795193302,
-      "shortcut": false
+      "shortcut": false,
+      "allowUnsafeTarget": true,
+      "assetTemplate": "ouncerpc-{release_tag}.zip"
     }
   ]
 }

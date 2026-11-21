@@ -14,7 +14,8 @@
       "marker": "sdmc:/kaihen/plugins/kai-menu-music.nso",
       "sha256": "bc5c9e47b30bbd71a43c0644226956a428a9c7592ca4f0f09b8e8bdfaf91cf0a",
       "published": 1795203675,
-      "shortcut": true
+      "shortcut": true,
+      "allowUnsafeTarget": true
     }
   ]
 }

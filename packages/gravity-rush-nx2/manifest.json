@@ -13,7 +13,9 @@
       "stripPrefix": "GravityRush-NX2-v1.0.0/switch/gravityrush/",
       "marker": "sdmc:/switch/gravityrush/GravityRush.nro",
       "sha256": "418ed4a139fe00e97efcf3f94ddfe23502f67921b600560a6a070dd2ceabf639",
-      "published": 1795000275
+      "published": 1795000275,
+      "assetTemplate": "{release_tag}.zip",
+      "stripPrefixTemplate": "{asset_stem}/switch/gravityrush/"
     }
   ]
 }
