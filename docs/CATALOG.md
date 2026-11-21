@@ -123,7 +123,7 @@ catalogue builds do **not** use `--strict`; pull requests do.
 ```json
 {
   "schema_version": 1,
-  "count": 63,
+  "count": 66,
   "packages": [
     {
       "name": "foo",
