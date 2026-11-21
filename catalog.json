@@ -98,16 +98,16 @@
       "title": "Brewstore",
       "author": "HerXayah",
       "description": "Homebrew store for Nintendo Switch 2.",
-      "version": "1.2.4",
+      "version": "1.3",
       "url": "https://github.com/HerXayah/brewstore",
       "asset": "brewstore.nro",
       "target": "sdmc:/switch",
       "marker": "sdmc:/switch/brewstore.nro",
-      "sha256": "61010bceb321683bda715010e5d81d93f4e7373f0b37931e2ad6aa0aed958cfd",
-      "published": 1795173431,
-      "release_tag": "1.2.4",
-      "download_url": "https://github.com/HerXayah/brewstore/releases/download/1.2.4/brewstore.nro",
-      "size": 840742
+      "sha256": "afd06b7d0bbdf318213f2b85044cfc636c78e33c7d83af1912e7d77fadaadfc6",
+      "published": 1795283400,
+      "release_tag": "1.3",
+      "download_url": "https://github.com/HerXayah/brewstore/releases/download/1.3/brewstore.nro",
+      "size": 967718
     },
     {
       "name": "cemu",
