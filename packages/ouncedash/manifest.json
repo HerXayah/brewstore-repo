@@ -1,0 +1,20 @@
+{
+  "packages": [
+    {
+      "name": "ouncedash",
+      "title": "OunceDash",
+      "author": "Malev0",
+      "description": "Geometry Dash loader for Switch 2. Requires your own Android APK in /switch/OunceDash/.",
+      "icon": "https://raw.githubusercontent.com/Malev0/OunceDash/main/port/OunceDash.jpg",
+      "version": "v1.0.0",
+      "url": "https://github.com/Malev0/OunceDash",
+      "release": "latest",
+      "asset": "OunceDash.nro",
+      "target": "sdmc:/switch/OunceDash",
+      "marker": "sdmc:/switch/OunceDash/OunceDash.nro",
+      "sha256": "0a82553c57c5c396ae8ca0c89ed4ecc212785e6b2a5af99bc2a63dc70c48027c",
+      "published": 1795146615,
+      "shortcut": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "packages": [
+    {
+      "name": "ns2-fwftp",
+      "title": "NS2 FWFTP",
+      "author": "onijuiku-rgb",
+      "description": "Read-only FTP server for your installed Switch 2 firmware titles. Connect on port 1337.",
+      "icon": "https://raw.githubusercontent.com/onijuiku-rgb/NS2-FWFTP/main/icon.jpg",
+      "version": "v1.2.0",
+      "url": "https://github.com/onijuiku-rgb/NS2-FWFTP",
+      "release": "latest",
+      "asset": "ns2-fwftp.nro",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/ns2-fwftp.nro",
+      "sha256": "c6f620e00a3859da0203de6a4f59016b5f7258052cee83b80ccdd109f0f2a66d",
+      "published": 1795206667,
+      "shortcut": true
+    }
+  ]
+}

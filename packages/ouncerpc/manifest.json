@@ -1,0 +1,21 @@
+{
+  "packages": [
+    {
+      "name": "ouncerpc",
+      "title": "OunceRPC",
+      "author": "WeWaffles",
+      "description": "Discord Rich Presence plugin for Switch 2. Installs the kaiHEN plugin; pair it with the bundled PC companion.",
+      "icon": "https://github.com/WeWaffles.png",
+      "version": "v0.4.1",
+      "url": "https://github.com/WeWaffles/ouncerpc",
+      "release": "latest",
+      "asset": "ouncerpc-v0.4.1.zip",
+      "target": "sdmc:/",
+      "stripPrefix": "ouncerpc/",
+      "marker": "sdmc:/kaihen/plugins/ouncerpc.nso",
+      "sha256": "59c7fb45bc02ef36e25acd675e6fc0c91f842726218ca203472fbd3011adc878",
+      "published": 1795193302,
+      "shortcut": false
+    }
+  ]
+}
