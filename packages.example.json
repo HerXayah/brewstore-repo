@@ -6,17 +6,22 @@
       "author": "Example Author", // <Optional> displayed author; defaults to Unknown
       "description": "A sample catalog entry. Replace the URL and icon with a real package archive.", // <Optional> shop card text
       "icon": "https://example.com/icon.png", // <Optional> HTTPS image URL only
-      "version": "main", // <Optional> shown version; workflow refreshes it
+      "version": "v1.0.0", // <Optional> displayed version hint; build replaces it with the resolved release
       "url": "https://github.com/example/example", // <Required> repo URL or direct archive URL
-      "release": "latest", // <Optional> enables release lookup
-      "asset": "example.zip", // <Optional> asset filename suffix; empty = auto
+      "release": "latest", // <Optional> latest (default) or a pinned tag
+      "asset": "example-v1.0.0.zip", // <Optional> concrete asset name for legacy clients
+      "assetTemplate": "example-{release_tag}.zip", // <Optional> resolved asset pattern; preferred by the build
       "branch": "main", // <Optional> README fallback and repo archive branch
-      "sha256": "", // <Optional> exact asset hash; empty = no check; workflow fills it
+      "sha256": "", // <Optional> source hint; empty = resolve during build
       "published": 1763425249, // <Optional> release time for Updated sort
       "target": "sdmc:/switch/example-homebrew", // <Optional> fixed path; omit for user's default
-      "stripPrefix": "example-main/", // <Optional> archive folder to remove
+      "stripPrefix": "example-v1.0.0/", // <Optional> concrete archive prefix for legacy clients
+      "stripPrefixTemplate": "{asset_stem}/", // <Optional> resolved archive prefix
       "marker": "sdmc:/switch/example-homebrew/example.nro", // <Optional> installed-file check
-      "shortcut": true // <Optional> create an hbmenu shortcut
+      "shortcut": true, // <Optional> create an hbmenu shortcut
+      "prerelease": false, // <Optional> true allows prerelease tags
+      "rehash": false, // <Optional> true forces a fresh asset download while hashing
+      "allowUnsafeTarget": false // <Optional> maintainer-only opt-in for sensitive targets
     },
     {
       "name": "direct-archive", // <Required> second package id
@@ -28,7 +33,7 @@
       "url": "https://codeload.github.com/example/example/zip/refs/heads/main", // <Required> direct HTTPS archive
       "asset": "example.zip", // <Optional> downloaded filename hint
       "branch": "main", // <Optional> unused for direct URLs
-      "sha256": "", // <Optional> recommended for direct URLs; workflow fills it
+      "sha256": "", // <Optional> recommended for direct URLs; resolved during build
       "published": 1763425249, // <Optional> optional sort timestamp
       "target": "sdmc:/switch/direct-archive", // <Optional> fixed path; omit for user's default
       "stripPrefix": "", // <Optional> empty when archive already has final layout

@@ -1,27 +1,61 @@
 # brewstore-repo
 
-Catalog for [brewstore](https://github.com/HerXayah/brewstore).
+Catalogue for [brewstore](https://github.com/HerXayah/brewstore).
 
 ```text
-packages/<name>/manifest.json   one package per file
-packages.json                   include index
+packages/<name>/manifest.json   one source package per file
+packages.json                   legacy include index
+catalog.json                    generated client catalogue
+scripts/                        generators and maintenance tools
+docs/CATALOG.md                 field, template and limit reference
 ```
 
-Each manifest contains a normal `packages` array with one entry. The index is:
+New Brewstore clients read `catalog.json`. It is generated from the source
+manifests and contains the resolved release tag, asset name, download URL,
+SHA-256 and optional size for every package. Clients do not call the GitHub API
+to resolve catalogue releases.
+
+`packages.json` and the per-package manifests are kept for older Brewstore
+clients. Do not edit `catalog.json` by hand.
+
+## Adding a package
+
+Create `packages/<name>/manifest.json` with a normal `packages` array containing
+one entry:
 
 ```json
 {
-  "include": [
-    "packages/example/manifest.json"
+  "packages": [
+    {
+      "name": "example-homebrew",
+      "title": "Example Homebrew",
+      "author": "Example Author",
+      "description": "A short description.",
+      "icon": "https://example.com/icon.png",
+      "url": "https://github.com/example/example-homebrew",
+      "release": "latest",
+      "assetTemplate": "{release_tag}.zip",
+      "stripPrefixTemplate": "{asset_stem}/"
+    }
   ]
 }
 ```
 
-brewstore resolves relative includes from the catalog URL and merges the results.
+Required fields are `name` and `url`. Then add the same path to the
+`packages.json` include list and run:
+
+```bash
+python3 scripts/build_catalog.py --validate-only
+python3 scripts/build_catalog.py
+```
+
+The scheduled `.github/workflows/catalog.yml` workflow refreshes `version`,
+`sha256`, `published` and `catalog.json` every eight hours, and on manifest
+changes to `main`.
 
 ## Release metadata
 
-Manifests may include:
+The source manifest provides hints; `catalog.json` receives the resolved values:
 
 ```json
 "version": "v1.2.3",
@@ -30,16 +64,29 @@ Manifests may include:
 "asset": "optional-asset-name.zip"
 ```
 
-`sha256` is the SHA-256 of the exact release asset brewstore downloads. It
-lets brewstore detect updates with the cached catalog and no GitHub API calls
-from the console.
+`sha256` is the SHA-256 of the exact release asset brewstore downloads.
+`published` is the release publication time in Unix seconds, used by the
+**Updated newest** sort.
 
-`published` is the release publication time in Unix seconds. Brewstore uses it
-for the **Updated newest** sort; manifests without it fall back to the local
-install/update time. The scheduled workflow
-`.github/workflows/update-manifests.yml` refreshes `version`, `sha256` and
-`published` from each package's latest GitHub/GitLab release using the
-workflow's own token.
+Use the separate template fields for values that follow the release:
+
+```json
+"asset": "OpenRAC-Switch2-v0.2.zip",
+"assetTemplate": "{release_tag}.zip",
+"stripPrefix": "OpenRAC-Switch2-v0.2/bundle/",
+"stripPrefixTemplate": "{asset_stem}/bundle/"
+```
+
+The build prefers templates. `update_manifests.py` expands them back into the
+concrete `asset` and `stripPrefix` fields so legacy clients keep working.
+
+`release: latest` follows the newest stable release with a matching asset. A
+pinned value such as `"release": "v1.2.3"` only changes when a bump PR is
+reviewed and merged. Set `"prerelease": true` to allow prereleases, and
+`"rehash": true` to force a fresh asset download during hashing.
+
+See [docs/CATALOG.md](docs/CATALOG.md) for templates, client limits, sensitive
+targets and the output contract.
 
 ## Install layout
 
@@ -63,7 +110,9 @@ or, for root-drop packages:
 ```
 
 Root targets are exceptions and must have a `marker` or a single-file asset.
-Apps that write to the SD root should be avoided unless unavoidable.
+Apps that write to the SD root should be avoided unless unavoidable. Sensitive
+system targets require `"allowUnsafeTarget": true` and are a maintainer
+decision.
 
 GitLab project URLs are also supported for release resolution:
 

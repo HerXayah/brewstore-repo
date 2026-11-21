@@ -1,7 +1,7 @@
 {
   "repositories": [
     {
-      "url": "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages.json",
+      "url": "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/catalog.json",
       "enabled": true
     }
   ]
