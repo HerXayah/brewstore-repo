@@ -1,0 +1,21 @@
+{
+  "packages": [
+    {
+      "name": "sm64coopdx",
+      "title": "SM64 Coop DX",
+      "author": "SltcYann",
+      "description": "Super Mario 64 co-op port for Switch 2. Requires your own USA .z64 ROM in /switch/sm64coopdx/.",
+      "icon": "https://raw.githubusercontent.com/SltcYann/Ounce-SM64CoopDX/main/res/switch/icon.jpg",
+      "version": "v1.1.0",
+      "url": "https://github.com/SltcYann/Ounce-SM64CoopDX",
+      "release": "latest",
+      "asset": "Ounce-SM64CoopDX-switch2.zip",
+      "stripPrefix": "switch/sm64coopdx/",
+      "target": "sdmc:/switch/sm64coopdx",
+      "marker": "sdmc:/switch/sm64coopdx/sm64coopdx.nro",
+      "sha256": "04c6ee1e5d0fe2466065634eca2f372fc37af8ec123acd67fbf2eab72c40dc2d",
+      "published": 1795005730,
+      "shortcut": true
+    }
+  ]
+}

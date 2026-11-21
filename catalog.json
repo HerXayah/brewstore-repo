@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "count": 63,
+  "count": 66,
   "packages": [
     {
       "name": "90dns-tester",
@@ -58,6 +58,24 @@
       "release_tag": "bad_apple_ounce",
       "download_url": "https://github.com/souldbminerr/bad-apple-switch/releases/download/bad_apple_ounce/bad-apple-switch.nro",
       "size": 59259489
+    },
+    {
+      "name": "beatsaber",
+      "title": "Beat Saber",
+      "author": "RobinVRL",
+      "description": "Beat Saber port for Switch 2. Requires your own Quest APK and OBB data in the install folder.",
+      "icon": "https://raw.githubusercontent.com/RobinVRL/Beatsaber-NSW/main/assets/icon.jpg",
+      "version": "v0.3.0",
+      "url": "https://github.com/RobinVRL/Beatsaber-NSW",
+      "asset": "BeatsaberNS2.nro",
+      "target": "sdmc:/switch/beat-saber-quest",
+      "marker": "sdmc:/switch/beat-saber-quest/BeatsaberNS2.nro",
+      "sha256": "0f5795aea7682ad2d1374e58d669186f0029aa82c511c3dd21e1e9fc1d848951",
+      "published": 1795211989,
+      "shortcut": true,
+      "release_tag": "v0.3.0",
+      "download_url": "https://github.com/RobinVRL/Beatsaber-NSW/releases/download/v0.3.0/BeatsaberNS2.nro",
+      "size": 31654998
     },
     {
       "name": "blacklist-tool",
@@ -596,6 +614,24 @@
       "size": 58013138
     },
     {
+      "name": "ouncedash",
+      "title": "OunceDash",
+      "author": "Malev0",
+      "description": "Geometry Dash loader for Switch 2. Requires your own Android APK in /switch/OunceDash/.",
+      "icon": "https://raw.githubusercontent.com/Malev0/OunceDash/main/port/OunceDash.jpg",
+      "version": "v1.0.0",
+      "url": "https://github.com/Malev0/OunceDash",
+      "asset": "OunceDash.nro",
+      "target": "sdmc:/switch/OunceDash",
+      "marker": "sdmc:/switch/OunceDash/OunceDash.nro",
+      "sha256": "0a82553c57c5c396ae8ca0c89ed4ecc212785e6b2a5af99bc2a63dc70c48027c",
+      "published": 1795146615,
+      "shortcut": true,
+      "release_tag": "v1.0.0",
+      "download_url": "https://github.com/Malev0/OunceDash/releases/download/v1.0.0/OunceDash.nro",
+      "size": 17041462
+    },
+    {
       "name": "ouncemtp",
       "title": "OunceMTP",
       "author": "venustrikes",
@@ -795,6 +831,25 @@
       "release_tag": "v1.0",
       "download_url": "https://github.com/mysterypaintwo/Shipwright-Switch2/releases/download/v1.0/soh-switch2-v1.0.zip",
       "size": 12353485
+    },
+    {
+      "name": "sm64coopdx",
+      "title": "SM64 Coop DX",
+      "author": "SltcYann",
+      "description": "Super Mario 64 co-op port for Switch 2. Requires your own USA .z64 ROM in /switch/sm64coopdx/.",
+      "icon": "https://raw.githubusercontent.com/SltcYann/Ounce-SM64CoopDX/main/res/switch/icon.jpg",
+      "version": "v1.1.0",
+      "url": "https://github.com/SltcYann/Ounce-SM64CoopDX",
+      "asset": "Ounce-SM64CoopDX-switch2.zip",
+      "stripPrefix": "switch/sm64coopdx/",
+      "target": "sdmc:/switch/sm64coopdx",
+      "marker": "sdmc:/switch/sm64coopdx/sm64coopdx.nro",
+      "sha256": "04c6ee1e5d0fe2466065634eca2f372fc37af8ec123acd67fbf2eab72c40dc2d",
+      "published": 1795005730,
+      "shortcut": true,
+      "release_tag": "v1.1.0",
+      "download_url": "https://github.com/SltcYann/Ounce-SM64CoopDX/releases/download/v1.1.0/Ounce-SM64CoopDX-switch2.zip",
+      "size": 41754442
     },
     {
       "name": "sm64ex",
