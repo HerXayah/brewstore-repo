@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "nx-torrent-player",
+      "title": "NX Torrent Player",
+      "author": "shodowlo",
+      "description": "Stremio on Nintendo Switch 2",
+      "icon": "https://raw.githubusercontent.com/shodowlo/nx-torrent-player/main/assets/NX-torrent-player-stremio.png",
+      "version": "v0.6.0",
+      "url": "https://github.com/shodowlo/nx-torrent-player",
+      "release": "latest",
+      "asset": "NX2-torrent-player.nro",
+      "target": "sdmc:/switch/NX-torrent-player",
+      "marker": "sdmc:/switch/NX-torrent-player/NX2-torrent-player.nro",
+      "sha256": "88ebc6e64373d5017d2f29ae04b44caca1dd8fbebe0fb7c0b806769735c9456c",
+      "published": 1794966579
+    }
+  ]
+}
