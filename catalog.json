@@ -335,14 +335,14 @@
       "author": "Mizuiro",
       "description": "Music player for Switch 2: a library of your artists, albums and songs from the SD card; MP3, FLAC, Ogg Vorbis, WAV and DSD; album art, playlists, equalizer, ReplayGain, sleep timer, resume, and Now Playing as a record, CD or cassette.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kaiplayer/main/icon.jpg",
-      "version": "v1.1.0",
+      "version": "v1.2.0",
       "url": "https://github.com/mizuiroame/kaiplayer",
       "asset": "KaiPlayer.nro",
-      "sha256": "3f1a07b99dc64741117b960486f0955d0a4994a536d75173be123dd054c64032",
-      "published": 1795159660,
-      "release_tag": "v1.1.0",
-      "download_url": "https://github.com/mizuiroame/kaiplayer/releases/download/v1.1.0/KaiPlayer.nro",
-      "size": 18436842
+      "sha256": "9fabc682fa1c7c263951a6f1aa1d99bf9ea4149df5cafb0e17df04e14be9dbb9",
+      "published": 1795342698,
+      "release_tag": "v1.2.0",
+      "download_url": "https://github.com/mizuiroame/kaiplayer/releases/download/v1.2.0/KaiPlayer.nro",
+      "size": 20628202
     },
     {
       "name": "kairadio",
@@ -350,14 +350,14 @@
       "author": "Mizuiro",
       "description": "Internet radio for Switch 2: tens of thousands of stations from Radio Browser, a world map, favorites, HLS.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kairadio/main/icon.jpg",
-      "version": "v1.1.0",
+      "version": "v1.2.0",
       "url": "https://github.com/mizuiroame/kairadio",
       "asset": "KaiRadio.nro",
-      "sha256": "44cee8361e303f3ffecadbea4521fff30dba42a10f564ea4f685022aaf34e4a3",
-      "published": 1795159670,
-      "release_tag": "v1.1.0",
-      "download_url": "https://github.com/mizuiroame/kairadio/releases/download/v1.1.0/KaiRadio.nro",
-      "size": 21552705
+      "sha256": "207d66b511c24d40f1d7e430b8af61bb014a77c368ed929d09638bdca9212bfc",
+      "published": 1795342705,
+      "release_tag": "v1.2.0",
+      "download_url": "https://github.com/mizuiroame/kairadio/releases/download/v1.2.0/KaiRadio.nro",
+      "size": 21663297
     },
     {
       "name": "kaitube",
@@ -379,14 +379,14 @@
       "author": "Mizuiro",
       "description": "Video player for Switch 2: your films and series from the SD card or your Jellyfin, Emby or Plex server, with hardware decoding (H.264, VP9, AV1), HEVC on the CPU, 4K, skip intro, Live TV, favorites, subtitles in your choice of fonts, sound tracks, resume and next episode.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kaivideo/main/icon.jpg",
-      "version": "v1.11.0",
+      "version": "v1.12.0",
       "url": "https://github.com/mizuiroame/kaivideo",
       "asset": "KaiVideo.nro",
-      "sha256": "af1f0d592af6e4998111ab96c2008d0a2ebddbc5254e5344ebd886654d585793",
-      "published": 1795283075,
-      "release_tag": "v1.11.0",
-      "download_url": "https://github.com/mizuiroame/kaivideo/releases/download/v1.11.0/KaiVideo.nro",
-      "size": 27508834
+      "sha256": "6b56aa68c991357417d594ca638d367ed29282b23d822fa14116fe512a9b7b22",
+      "published": 1795342692,
+      "release_tag": "v1.12.0",
+      "download_url": "https://github.com/mizuiroame/kaivideo/releases/download/v1.12.0/KaiVideo.nro",
+      "size": 28311650
     },
     {
       "name": "kaizhar",
