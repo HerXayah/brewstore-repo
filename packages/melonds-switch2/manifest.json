@@ -1,0 +1,19 @@
+{
+  "packages": [
+    {
+      "name": "melonds-switch2",
+      "title": "melonDS",
+      "author": "ac1dburnz, Hydr8gon",
+      "description": "Experimental melonDS Nintendo DS emulator port for Switch 2, based on Hydr8gon/melonDS.",
+      "url": "https://github.com/ac1dburnz/melonDS-switch2",
+      "release": "latest",
+      "prerelease": true,
+      "asset": "melonds-switch2-experimental.zip",
+      "assetTemplate": "melonds-switch2-experimental.zip",
+      "stripPrefix": "switch/",
+      "stripPrefixTemplate": "switch/",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/melonds/melonds-switch2.nro"
+    }
+  ]
+}

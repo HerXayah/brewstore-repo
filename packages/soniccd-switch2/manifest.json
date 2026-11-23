@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "soniccd-switch2",
+      "title": "Sonic CD",
+      "author": "oracleofseasons, RSDKv3 contributors",
+      "description": "Sonic CD (RSDKv3 decompilation) for Nintendo Switch 2 homebrew, built with libounce + OunceVK.",
+      "url": "https://github.com/oracleofseasons/RSDKv3-Decompilation-Switch2",
+      "release": "latest",
+      "asset": "SonicCD-Switch2.zip",
+      "assetTemplate": "SonicCD-Switch2.zip",
+      "stripPrefix": "switch/",
+      "stripPrefixTemplate": "switch/",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/SonicCD/SonicCD.nro"
+    }
+  ]
+}

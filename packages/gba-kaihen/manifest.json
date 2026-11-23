@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "gba-kaihen",
+      "title": "GBA-kaiHEN (mGBA)",
+      "author": "jackspence7, mGBA team",
+      "description": "mGBA Game Boy Advance emulator for Switch 2 running kaiHEN.",
+      "url": "https://github.com/jackspence7/GBA-kaiHEN",
+      "release": "latest",
+      "asset": "mgba.nro",
+      "assetTemplate": "mgba.nro",
+      "target": "sdmc:/switch/gba-kaihen",
+      "marker": "sdmc:/switch/gba-kaihen/mgba.nro"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "switch2now",
+      "title": "Switch2NOW",
+      "author": "davidkalil10",
+      "description": "Switch2NOW homebrew app for Nintendo Switch 2.",
+      "url": "https://github.com/davidkalil10/Switch2NOW",
+      "release": "latest",
+      "asset": "SwitchNOW-switch2.nro",
+      "assetTemplate": "SwitchNOW-switch2.nro",
+      "target": "sdmc:/switch/switch2now",
+      "marker": "sdmc:/switch/switch2now/SwitchNOW-switch2.nro"
+    }
+  ]
+}

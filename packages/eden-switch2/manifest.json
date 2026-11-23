@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "eden-switch2",
+      "title": "Eden",
+      "author": "Olmectron",
+      "description": "Proof of concept: Eden (Switch 1 emulator) on Switch 2 homebrew. Unstable.",
+      "url": "https://github.com/Olmectron/eden-switch2-poc",
+      "release": "v0.5.0",
+      "asset": "eden.nro",
+      "assetTemplate": "eden.nro",
+      "target": "sdmc:/switch/eden",
+      "marker": "sdmc:/switch/eden/eden.nro"
+    }
+  ]
+}

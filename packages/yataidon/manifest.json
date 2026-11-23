@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "yataidon",
+      "title": "YataiDON",
+      "author": "Yonokid",
+      "description": "YataiDON: TJA chart player for Taiko-style rhythm games, written in C++ with raylib. Bundled songs included.",
+      "url": "https://github.com/Yonokid/YataiDON",
+      "release": "latest",
+      "asset": "YataiDON-Switch2.zip",
+      "assetTemplate": "YataiDON-Switch2.zip",
+      "stripPrefix": "switch/",
+      "stripPrefixTemplate": "switch/",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/YataiDON/YataiDON.nro"
+    }
+  ]
+}

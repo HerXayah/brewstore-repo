@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "chocolate-doom-nx",
+      "title": "Chocolate Doom",
+      "author": "kurumuz",
+      "description": "Chocolate Doom for Switch and Switch 2. Bring your own WAD files.",
+      "url": "https://github.com/kurumuz/chocolate-doom-nx",
+      "release": "latest",
+      "asset": "doom.nro",
+      "assetTemplate": "doom.nro",
+      "target": "sdmc:/switch/chocolate-doom",
+      "marker": "sdmc:/switch/chocolate-doom/doom.nro"
+    }
+  ]
+}

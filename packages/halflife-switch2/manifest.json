@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "halflife-switch2",
+      "title": "Half-Life",
+      "author": "OverkillLabs3, Valve, FWGS",
+      "description": "Half-Life for Switch 2 via Xash3D. Copy your own valve folder into switch/xash3d.",
+      "url": "https://github.com/OverkillLabs3/halflife-switch2",
+      "release": "latest",
+      "asset": "halflife-switch2-1.0.0.zip",
+      "assetTemplate": "halflife-switch2-{version}.zip",
+      "stripPrefix": "switch/",
+      "stripPrefixTemplate": "switch/",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/halflife.nro"
+    }
+  ]
+}

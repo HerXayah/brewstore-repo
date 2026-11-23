@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "balatro-switch2",
+      "title": "Balatro",
+      "author": "OverkillLabs3, LocalThunk",
+      "description": "Balatro for Switch 2. Extract your own Steam copy into switch/balatro/game.",
+      "url": "https://github.com/OverkillLabs3/balatro-switch2",
+      "release": "latest",
+      "asset": "balatro-switch2-1.0.0.zip",
+      "assetTemplate": "balatro-switch2-{version}.zip",
+      "stripPrefix": "switch/",
+      "stripPrefixTemplate": "switch/",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/balatro.nro"
+    }
+  ]
+}

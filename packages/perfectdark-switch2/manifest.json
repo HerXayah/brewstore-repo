@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "perfectdark-switch2",
+      "title": "Perfect Dark",
+      "author": "OverkillLabs3, Rare",
+      "description": "Perfect Dark for Switch 2. Drop your own ROM into switch/pd/data.",
+      "url": "https://github.com/OverkillLabs3/perfectdark-switch2",
+      "release": "latest",
+      "asset": "perfectdark-switch2-1.0.0.zip",
+      "assetTemplate": "perfectdark-switch2-{version}.zip",
+      "stripPrefix": "switch/",
+      "stripPrefixTemplate": "switch/",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/perfectdark.nro"
+    }
+  ]
+}

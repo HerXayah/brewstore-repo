@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "kaikart",
+      "title": "KaiKart",
+      "author": "6rimson",
+      "description": "KaiKart: Switch 2 port of WiiCompiled, with Retro Rewind tracks.",
+      "url": "https://github.com/6rimson/KaiKart",
+      "release": "latest",
+      "asset": "KaiKart-0.4.1.nro",
+      "assetTemplate": "KaiKart-{version}.nro",
+      "target": "sdmc:/switch/kaikart",
+      "marker": "sdmc:/switch/kaikart/KaiKart-0.4.1.nro"
+    }
+  ]
+}

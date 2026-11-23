@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "torchlight-rekindled",
+      "title": "Torchlight: Rekindled",
+      "author": "GreenSwampDweller",
+      "description": "Torchlight: Rekindled — Torchlight build for modern portable systems, Switch 2 build.",
+      "url": "https://github.com/GreenSwampDweller/torchlight-rekindled",
+      "release": "latest",
+      "asset": "TorchlightRekindled-1.2.0-switch2.zip",
+      "assetTemplate": "TorchlightRekindled-{version}-switch2.zip",
+      "stripPrefix": "switch/",
+      "stripPrefixTemplate": "switch/",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/torchlight/torchlight.nro"
+    }
+  ]
+}

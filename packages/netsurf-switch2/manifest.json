@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "netsurf-switch2",
+      "title": "NetSurf",
+      "author": "davidkalil10",
+      "description": "NetSurf browser engine ported to Switch 2 homebrew (SDL2 frontend, QuickJS, ffmpeg audio).",
+      "url": "https://github.com/davidkalil10/netsurf-switch2",
+      "release": "latest",
+      "asset": "netsurf-switch2.nro",
+      "assetTemplate": "netsurf-switch2.nro",
+      "target": "sdmc:/switch/netsurf",
+      "marker": "sdmc:/switch/netsurf/netsurf-switch2.nro"
+    }
+  ]
+}

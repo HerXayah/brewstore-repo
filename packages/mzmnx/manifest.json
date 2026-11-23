@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "mzmnx",
+      "title": "Metroid: Zero Mission",
+      "author": "JJTapiaXX",
+      "description": "Metroid: Zero Mission decompilation port (mzmnx) for Switch 2. Requires your own GBA ROM.",
+      "url": "https://github.com/JJTapiaXX/Metroid-Zero-Mission-NX",
+      "release": "latest",
+      "asset": "mzmnx-switch2.nro",
+      "assetTemplate": "mzmnx-switch2.nro",
+      "target": "sdmc:/switch/mzmnx",
+      "marker": "sdmc:/switch/mzmnx/mzmnx-switch2.nro"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "punktfunk",
+      "title": "Punktfunk",
+      "author": "d0vere",
+      "description": "Native Punktfunk client port for Nintendo Switch 2 — German community radio.",
+      "url": "https://github.com/d0vere/punktfunk-client-switch2",
+      "release": "latest",
+      "asset": "punktfunk-switch2.nro",
+      "assetTemplate": "punktfunk-switch2.nro",
+      "target": "sdmc:/switch/punktfunk",
+      "marker": "sdmc:/switch/punktfunk/punktfunk-switch2.nro"
+    }
+  ]
+}

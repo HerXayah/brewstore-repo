@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "switch2iptv",
+      "title": "Switch2IPTV",
+      "author": "davidkalil10",
+      "description": "IPTV player for Nintendo Switch 2.",
+      "url": "https://github.com/davidkalil10/switch2iptv",
+      "release": "latest",
+      "asset": "IptvPlayerSwitch-switch2.nro",
+      "assetTemplate": "IptvPlayerSwitch-switch2.nro",
+      "target": "sdmc:/switch/switch2iptv",
+      "marker": "sdmc:/switch/switch2iptv/IptvPlayerSwitch-switch2.nro"
+    }
+  ]
+}

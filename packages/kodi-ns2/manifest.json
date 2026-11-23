@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "kodi-ns2",
+      "title": "Kodi",
+      "author": "ignotusbucius, XBMC Foundation",
+      "description": "Kodi 21.3 ported to Nintendo Switch 2 homebrew: real-time playback up to 4K, HEVC/HDR10, DTS-HD MA, HTTP streaming.",
+      "url": "https://github.com/ignotusbucius/kodi-ns2",
+      "release": "latest",
+      "asset": "kodi-ns2-rev12.zip",
+      "assetTemplate": "kodi-ns2-{version}.zip",
+      "stripPrefix": "switch/",
+      "stripPrefixTemplate": "switch/",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/kodi.nro"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "vita3k-nx",
+      "title": "Vita3K",
+      "author": "NaGaa95, Vita3K team",
+      "description": "Vita3K PS Vita emulator port for Nintendo Switch 2. Requires your own Vita games.",
+      "url": "https://github.com/NaGaa95/Vita3K-nx",
+      "release": "latest",
+      "asset": "Vita3K-NX2.nro",
+      "assetTemplate": "Vita3K-NX2.nro",
+      "target": "sdmc:/switch/vita3k",
+      "marker": "sdmc:/switch/vita3k/Vita3K-NX2.nro"
+    }
+  ]
+}

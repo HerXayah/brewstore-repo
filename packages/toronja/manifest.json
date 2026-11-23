@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "toronja",
+      "title": "Toronja",
+      "author": "Olmectron",
+      "description": "Nintendo 3DS emulator for Switch 2 and Switch, continuing Dekopon (the Azahar port). Toronja Link plays from a second console.",
+      "url": "https://github.com/Olmectron/toronja",
+      "release": "latest",
+      "asset": "toronja-switch2.nro",
+      "assetTemplate": "toronja-switch2.nro",
+      "target": "sdmc:/switch/toronja",
+      "marker": "sdmc:/switch/toronja/toronja-switch2.nro"
+    }
+  ]
+}

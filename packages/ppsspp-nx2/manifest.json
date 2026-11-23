@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "ppsspp-nx2",
+      "title": "PPSSPP NX2",
+      "author": "davidkalil10, XITRIX",
+      "description": "PSP emulator for Nintendo Switch 2 (davidkalil10 build of ppsspp-nx2).",
+      "url": "https://github.com/davidkalil10/ppsspp-nx2",
+      "release": "latest",
+      "asset": "PPSSPP-switch2.nro",
+      "assetTemplate": "PPSSPP-switch2.nro",
+      "target": "sdmc:/switch/ppsspp",
+      "marker": "sdmc:/switch/ppsspp/PPSSPP-switch2.nro"
+    }
+  ]
+}

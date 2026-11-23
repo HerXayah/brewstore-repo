@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "ppsspp-nx2-xitrix",
+      "title": "PPSSPP NX2 (XITRIX)",
+      "author": "XITRIX",
+      "description": "PSP emulator for Nintendo Switch 2 — the original XITRIX ppsspp-nx2 release.",
+      "url": "https://github.com/XITRIX/ppsspp-nx2",
+      "release": "latest",
+      "asset": "PPSSPP-NX2.nro",
+      "assetTemplate": "PPSSPP-NX2.nro",
+      "target": "sdmc:/switch/ppsspp-xitrix",
+      "marker": "sdmc:/switch/ppsspp-xitrix/PPSSPP-NX2.nro"
+    }
+  ]
+}

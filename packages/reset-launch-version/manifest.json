@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "reset-launch-version",
+      "title": "Reset Launch Version",
+      "author": "cainan-c",
+      "description": "Resets a game's launch version on Nintendo Switch 2, bypassing HOS anti-downgrade. Uses ns2jb or kaiHEN.",
+      "url": "https://github.com/cainan-c/reset-launch-version",
+      "release": "latest",
+      "asset": "dist.zip",
+      "assetTemplate": "dist.zip",
+      "stripPrefix": "switch/",
+      "stripPrefixTemplate": "switch/",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/reset-launch-version.nro"
+    }
+  ]
+}

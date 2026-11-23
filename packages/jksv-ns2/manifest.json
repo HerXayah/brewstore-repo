@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "jksv-ns2",
+      "title": "JKSV-NS2",
+      "author": "Aster145, J-D-K",
+      "description": "JKSV save manager for Switch 2 (kaiHEN), maintained by 果冻扭扭; based on JKSV by J-D-K.",
+      "url": "https://github.com/Aster145/JKSV-NS2",
+      "release": "latest",
+      "asset": "JKSV-NS2-1.0.1.nro",
+      "assetTemplate": "JKSV-NS2-{version}.nro",
+      "target": "sdmc:/switch/JKSV-NS2",
+      "marker": "sdmc:/switch/JKSV-NS2/JKSV-NS2-1.0.1.nro"
+    }
+  ]
+}

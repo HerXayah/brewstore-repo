@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "lswtcs-sx2",
+      "title": "LSWTCS SX2",
+      "author": "AlvaroEPena, NaGaa95",
+      "description": "Native Switch 2 port of LEGO Star Wars: The Complete Saga, based on NaGaa95/lswtcs_nx. Requires your own game data.",
+      "url": "https://github.com/AlvaroEPena/lswtcs_sx2",
+      "release": "latest",
+      "asset": "lswtcs-sx2.nro",
+      "assetTemplate": "lswtcs-sx2.nro",
+      "target": "sdmc:/switch/lswtcs-sx2",
+      "marker": "sdmc:/switch/lswtcs-sx2/lswtcs-sx2.nro"
+    }
+  ]
+}

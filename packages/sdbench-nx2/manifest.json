@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "sdbench-nx2",
+      "title": "SDBench NX2",
+      "author": "OverkillLabs3",
+      "description": "SD card storage benchmark for Nintendo Switch 2.",
+      "url": "https://github.com/OverkillLabs3/sdbench-nx2",
+      "release": "latest",
+      "asset": "sdbench-nx2-1.0.0.zip",
+      "assetTemplate": "sdbench-nx2-{version}.zip",
+      "stripPrefix": "switch/",
+      "stripPrefixTemplate": "switch/",
+      "target": "sdmc:/switch",
+      "marker": "sdmc:/switch/sdbench.nro"
+    }
+  ]
+}

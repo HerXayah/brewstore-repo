@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "gmca",
+      "title": "GMCA",
+      "author": "thcolin",
+      "description": "Gamepad Media Center Aggregator: Plex, Jellyfin, Emby or Stremio on your gamepad — Switch 2 build.",
+      "url": "https://github.com/thcolin/gamepad-media-center-aggregator",
+      "release": "latest",
+      "asset": "GMCA-switch2.nro.zip",
+      "assetTemplate": "GMCA-switch2.nro.zip",
+      "target": "sdmc:/switch/GMCA",
+      "marker": "sdmc:/switch/GMCA/GMCA-switch2.nro"
+    }
+  ]
+}
