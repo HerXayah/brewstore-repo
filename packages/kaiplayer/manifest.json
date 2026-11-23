@@ -4,7 +4,7 @@
       "name": "kaiplayer",
       "title": "KaiPlayer",
       "author": "Mizuiro",
-      "description": "Music player for Switch 2: a library of your artists, albums and songs from the SD card; MP3, FLAC, Ogg Vorbis, WAV and DSD; album art, playlists, equalizer, ReplayGain, sleep timer, resume, and Now Playing as a record, CD or cassette.",
+      "description": "Music player for Switch 2: a library of your artists, albums and songs from the SD card, a network folder or your Navidrome server; MP3, FLAC, AAC, ALAC, Opus, Ogg Vorbis, WAV and DSD; album art, playlists, equalizer, ReplayGain, sleep timer, resume, Now Playing as a record, CD or cassette, and 9 languages.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kaiplayer/main/icon.jpg",
       "version": "v1.4.0",
       "url": "https://github.com/mizuiroame/kaiplayer",
