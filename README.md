@@ -50,8 +50,9 @@ python3 scripts/build_catalog.py
 ```
 
 The scheduled `.github/workflows/catalog.yml` workflow refreshes `version`,
-`sha256`, `published` and `catalog.json` every eight hours, and on manifest
-changes to `main`.
+`sha256`, `published`, opted-in GitHub asset download counts (`app_dls`) and
+`catalog.json` every eight hours. Changes to manifests on `main` also trigger
+the workflow.
 
 ## Release metadata
 

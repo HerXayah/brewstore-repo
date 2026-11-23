@@ -24,6 +24,7 @@ Common optional fields:
 | `marker` | File that proves the package is installed. |
 | `sha256` | Source hint only; `catalog.json` receives the resolved hash. |
 | `published` | Source hint; refreshed by the build. |
+| `app_dls` | Opt in to showing GitHub downloads of the selected release asset. The build and legacy-manifest updater refresh the count. This is not an installation or unique-user count. |
 | `shortcut` | Create an hbmenu shortcut. |
 | `prerelease` | Set `true` to allow prereleases for this package. |
 | `rehash` | Force the build to download/hash the asset instead of reusing a previous hash. |
@@ -78,6 +79,7 @@ The generator enforces the same limits as the client:
 | `sha256` | required, 64 lowercase hex |
 | `size` | optional non-negative integer |
 | `published` | integer epoch |
+| `app_dls` | optional unsigned 64-bit integer |
 | `target` | `sdmc:/`, `sdmc:/switch`, or `sdmc:/switch/<path>`, 255 chars |
 | `marker` | `sdmc:/...`, not root, 511 chars |
 | `stripPrefix` | relative, no `..`, 127 chars |

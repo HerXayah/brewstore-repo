@@ -42,6 +42,7 @@ USER_AGENT = "brewstore-catalog-builder/1.0"
 TIMEOUT = 40
 MAX_SIDECAR_BYTES = 1024 * 1024
 DEFAULT_HASH_MAX_BYTES = 512 * 1024 * 1024
+MAX_APP_DOWNLOADS = (1 << 64) - 1  # Sphaira's app_dls field is unsigned 64-bit.
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 SHA256_RE = re.compile(r"^[0-9a-fA-F]{64}$")
@@ -181,6 +182,7 @@ def release_assets(provider: str, release: dict[str, Any]) -> list[dict[str, Any
                 "url": str(asset.get("browser_download_url") or ""),
                 "digest": str(asset.get("digest") or ""),
                 "size": asset.get("size"),
+                "download_count": asset.get("download_count"),
             })
         return result
 
@@ -568,6 +570,12 @@ def validate_package_source(package: Any, manifest_path: Path, *, allow_sensitiv
     size = package.get("size")
     if size is not None and (isinstance(size, bool) or not isinstance(size, int) or size < 0):
         raise BuildError(f"{name}: size must be a non-negative integer")
+    downloads = package.get("app_dls")
+    if downloads is not None and (
+        isinstance(downloads, bool) or not isinstance(downloads, int)
+        or not 0 <= downloads <= MAX_APP_DOWNLOADS
+    ):
+        raise BuildError(f"{name}: app_dls must be an unsigned 64-bit integer")
     return package
 
 
@@ -637,6 +645,14 @@ def resolve_package(
         result["size"] = asset_size
     else:
         result.pop("size", None)
+    downloads = asset.get("download_count")
+    if (
+        "app_dls" in result
+        and isinstance(downloads, int)
+        and not isinstance(downloads, bool)
+        and 0 <= downloads <= MAX_APP_DOWNLOADS
+    ):
+        result["app_dls"] = downloads
     published = published_epoch(
         release.get("published_at") or release.get("released_at") or release.get("created_at")
     )

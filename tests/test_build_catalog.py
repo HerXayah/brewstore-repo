@@ -155,6 +155,46 @@ class ReleaseSelectionTests(Base):
         )
 
 
+class DownloadCountTests(Base):
+    def test_selected_github_asset_count_is_used(self):
+        other = asset("other.nro", digest=SHA_A)
+        other["download_count"] = 99
+        selected = asset("foo.nro", digest=SHA_B)
+        selected["download_count"] = 12
+        with mock.patch.object(
+            catalog, "fetch_releases",
+            return_value=("github", [release("v1", assets=[other, selected])]),
+        ):
+            resolved, _ = catalog.resolve_package(
+                package(app_dls=0), max_hash_bytes=100
+            )
+        self.assertEqual(resolved["app_dls"], 12)
+
+    def test_package_without_opt_in_has_no_download_count(self):
+        selected = asset("foo.nro", digest=SHA_A)
+        selected["download_count"] = 12
+        with mock.patch.object(
+            catalog, "fetch_releases",
+            return_value=("github", [release("v1", assets=[selected])]),
+        ):
+            resolved, _ = catalog.resolve_package(package(), max_hash_bytes=100)
+        self.assertNotIn("app_dls", resolved)
+
+    def test_unavailable_count_keeps_existing_source_value(self):
+        for count in (None, -1, True, catalog.MAX_APP_DOWNLOADS + 1):
+            with self.subTest(count=count):
+                selected = asset("foo.nro", digest=SHA_A)
+                selected["download_count"] = count
+                with mock.patch.object(
+                    catalog, "fetch_releases",
+                    return_value=("github", [release("v1", assets=[selected])]),
+                ):
+                    resolved, _ = catalog.resolve_package(
+                        package(app_dls=7), max_hash_bytes=100
+                    )
+                self.assertEqual(resolved["app_dls"], 7)
+
+
 class HashTests(Base):
     def test_digest_wins(self):
         selected = asset(digest=SHA_A)
@@ -309,6 +349,9 @@ class ValidationTests(Base):
         invalid(published="1" * 25)
         valid(size=0)
         invalid(size=-1)
+        valid(app_dls=0)
+        for bad in (-1, True, 1.5, "12", catalog.MAX_APP_DOWNLOADS + 1):
+            invalid(app_dls=bad)
 
     def test_resolved_contract_limits(self):
         entry = catalog_entry()

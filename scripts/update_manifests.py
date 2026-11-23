@@ -11,6 +11,7 @@ from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
+MAX_APP_DOWNLOADS = (1 << 64) - 1  # Sphaira stores app_dls as u64.
 
 
 def request_json(url):
@@ -89,6 +90,24 @@ def digest_hex(asset):
     if len(digest) == 64 and re.fullmatch(r"[0-9a-fA-F]{64}", digest):
         return digest.lower()
     return ""
+
+
+def update_download_count(package, asset):
+    """Copy the selected GitHub asset's count when it fits Sphaira's u64 field."""
+    if "app_dls" not in package:
+        return False
+    count = asset.get("download_count")
+    if (
+        isinstance(count, bool)
+        or not isinstance(count, int)
+        or not 0 <= count <= MAX_APP_DOWNLOADS
+    ):
+        return False
+    current = package.get("app_dls")
+    if isinstance(current, int) and not isinstance(current, bool) and current == count:
+        return False
+    package["app_dls"] = count
+    return True
 
 
 def published_epoch(value):
@@ -189,6 +208,8 @@ def main():
                 version = normalized_version(tag)
                 published = published_epoch(release.get("published_at"))
                 sha256 = digest_hex(asset)
+                if update_download_count(package, asset):
+                    changed += 1
             if not version:
                 continue
             if package.get("assetTemplate"):
