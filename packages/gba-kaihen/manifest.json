@@ -10,7 +10,10 @@
       "asset": "mgba.nro",
       "assetTemplate": "mgba.nro",
       "target": "sdmc:/switch/gba-kaihen",
-      "marker": "sdmc:/switch/gba-kaihen/mgba.nro"
+      "marker": "sdmc:/switch/gba-kaihen/mgba.nro",
+      "version": "v1.0.0",
+      "sha256": "d36444da81498d6cae058745117f659a3cfb3d2fffb609bfbcf05a4a98c820ae",
+      "published": 1794629511
     }
   ]
 }

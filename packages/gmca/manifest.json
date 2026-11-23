@@ -10,7 +10,10 @@
       "asset": "GMCA-switch2.nro.zip",
       "assetTemplate": "GMCA-switch2.nro.zip",
       "target": "sdmc:/switch/GMCA",
-      "marker": "sdmc:/switch/GMCA/GMCA-switch2.nro"
+      "marker": "sdmc:/switch/GMCA/GMCA-switch2.nro",
+      "version": "v1.5.0",
+      "sha256": "a97bd6f5a4ae9fa96be36bc7fc6bdfa79d5de4fe38c6ad7e56908687003165f8",
+      "published": 1795086170
     }
   ]
 }

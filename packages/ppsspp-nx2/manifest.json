@@ -10,7 +10,10 @@
       "asset": "PPSSPP-switch2.nro",
       "assetTemplate": "PPSSPP-switch2.nro",
       "target": "sdmc:/switch/ppsspp",
-      "marker": "sdmc:/switch/ppsspp/PPSSPP-switch2.nro"
+      "marker": "sdmc:/switch/ppsspp/PPSSPP-switch2.nro",
+      "version": "v1.1.9",
+      "sha256": "5ada96c313055aa56391c0468efc72ea46a33944dea8436e420318b33a45948f",
+      "published": 1795146500
     }
   ]
 }

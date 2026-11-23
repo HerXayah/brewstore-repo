@@ -12,7 +12,10 @@
       "stripPrefix": "switch/",
       "stripPrefixTemplate": "switch/",
       "target": "sdmc:/switch",
-      "marker": "sdmc:/switch/torchlight/torchlight.nro"
+      "marker": "sdmc:/switch/torchlight/torchlight.nro",
+      "version": "1.2.0",
+      "sha256": "1ba89eda9a06d80f28024a560ae8ded87de75074ff309300585877dd998cfc85",
+      "published": 1794989552
     }
   ]
 }

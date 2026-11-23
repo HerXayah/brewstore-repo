@@ -10,7 +10,10 @@
       "asset": "punktfunk-switch2.nro",
       "assetTemplate": "punktfunk-switch2.nro",
       "target": "sdmc:/switch/punktfunk",
-      "marker": "sdmc:/switch/punktfunk/punktfunk-switch2.nro"
+      "marker": "sdmc:/switch/punktfunk/punktfunk-switch2.nro",
+      "version": "v0.1.0",
+      "sha256": "7f8a533dd07cdd7a338cd0b1612982ccb4819d03cee1c7664349a030b2c28457",
+      "published": 1795055724
     }
   ]
 }

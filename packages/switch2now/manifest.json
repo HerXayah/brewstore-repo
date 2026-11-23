@@ -10,7 +10,10 @@
       "asset": "SwitchNOW-switch2.nro",
       "assetTemplate": "SwitchNOW-switch2.nro",
       "target": "sdmc:/switch/switch2now",
-      "marker": "sdmc:/switch/switch2now/SwitchNOW-switch2.nro"
+      "marker": "sdmc:/switch/switch2now/SwitchNOW-switch2.nro",
+      "version": "v1.3.0",
+      "sha256": "2591acba44f99645a9b1de80eac8aef7ae7a8d70083492fd0a4014b8ef38eeb3",
+      "published": 1794877257
     }
   ]
 }

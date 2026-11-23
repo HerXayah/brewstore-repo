@@ -10,7 +10,10 @@
       "asset": "toronja-switch2.nro",
       "assetTemplate": "toronja-switch2.nro",
       "target": "sdmc:/switch/toronja",
-      "marker": "sdmc:/switch/toronja/toronja-switch2.nro"
+      "marker": "sdmc:/switch/toronja/toronja-switch2.nro",
+      "version": "v0.9.37",
+      "sha256": "8bf2a11853dfa1dcad1f5afe7c13f6f7fb375470283aac9339f4117273283b05",
+      "published": 1795083854
     }
   ]
 }

@@ -10,7 +10,10 @@
       "asset": "Vita3K-NX2.nro",
       "assetTemplate": "Vita3K-NX2.nro",
       "target": "sdmc:/switch/vita3k",
-      "marker": "sdmc:/switch/vita3k/Vita3K-NX2.nro"
+      "marker": "sdmc:/switch/vita3k/Vita3K-NX2.nro",
+      "version": "1.4.2",
+      "sha256": "e22c2b72175d7e0384cb56f8656e8bfb862ced9d51cd8fb0870d195c88d8dbf6",
+      "published": 1795120515
     }
   ]
 }

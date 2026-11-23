@@ -10,7 +10,10 @@
       "asset": "lswtcs-sx2.nro",
       "assetTemplate": "lswtcs-sx2.nro",
       "target": "sdmc:/switch/lswtcs-sx2",
-      "marker": "sdmc:/switch/lswtcs-sx2/lswtcs-sx2.nro"
+      "marker": "sdmc:/switch/lswtcs-sx2/lswtcs-sx2.nro",
+      "version": "v0.4.0",
+      "sha256": "37d55032e74dccd9280a1f4643f8f38eafbc0259bb9d6d3e3f78fad843d3b712",
+      "published": 1795180050
     }
   ]
 }

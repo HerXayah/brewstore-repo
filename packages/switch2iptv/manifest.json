@@ -10,7 +10,10 @@
       "asset": "IptvPlayerSwitch-switch2.nro",
       "assetTemplate": "IptvPlayerSwitch-switch2.nro",
       "target": "sdmc:/switch/switch2iptv",
-      "marker": "sdmc:/switch/switch2iptv/IptvPlayerSwitch-switch2.nro"
+      "marker": "sdmc:/switch/switch2iptv/IptvPlayerSwitch-switch2.nro",
+      "version": "v1.0.8",
+      "sha256": "70b76e5a8f8c9df425936c5a8d3d6b9ade049863398b5fd2ac2d52810957074b",
+      "published": 1794916713
     }
   ]
 }
