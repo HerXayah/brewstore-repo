@@ -6,7 +6,7 @@
       "author": "c4ndyf1sh",
       "description": "TounceHLE — Felix high-level emulator for Nintendo Switch 2.",
       "url": "https://gitlab.com/c4ndyf1sh/TounceHLE",
-      "release": "v1.0.0",
+      "release": "v1.0.1",
       "asset": "TounceHLE-Switch2.nro",
       "assetTemplate": "TounceHLE-Switch2.nro",
       "target": "sdmc:/switch/touncehle",
