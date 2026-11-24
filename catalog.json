@@ -383,14 +383,14 @@
       "author": "Mizuiro",
       "description": "Music player for Switch 2: a library of your artists, albums and songs from the SD card; MP3, FLAC, Ogg Vorbis, WAV and DSD; album art, playlists, equalizer, ReplayGain, sleep timer, resume, and Now Playing as a record, CD or cassette.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kaiplayer/main/icon.jpg",
-      "version": "v1.4.1",
+      "version": "v1.5.0",
       "url": "https://github.com/mizuiroame/kaiplayer",
       "asset": "KaiPlayer.nro",
-      "sha256": "2849ee333426f075bf570cf175105b113cb056e894757c12c90de7f6f834a457",
-      "published": 1795477730,
-      "release_tag": "v1.4.1",
-      "download_url": "https://github.com/mizuiroame/kaiplayer/releases/download/v1.4.1/KaiPlayer.nro",
-      "size": 20685546
+      "sha256": "67e7103a1c6aaa4675322d1fea1f26b051988077b2ac8701be47214995c7358b",
+      "published": 1795503197,
+      "release_tag": "v1.5.0",
+      "download_url": "https://github.com/mizuiroame/kaiplayer/releases/download/v1.5.0/KaiPlayer.nro",
+      "size": 20689642
     },
     {
       "name": "kairadio",
@@ -398,14 +398,14 @@
       "author": "Mizuiro",
       "description": "Internet radio for Switch 2: tens of thousands of stations from Radio Browser, a world map, favorites, HLS.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kairadio/main/icon.jpg",
-      "version": "v1.4.1",
+      "version": "v1.5.0",
       "url": "https://github.com/mizuiroame/kairadio",
       "asset": "KaiRadio.nro",
-      "sha256": "f45c212c512b783e71444b0085062d022c4f44aac2cc7288113ef4e5e14cad8e",
-      "published": 1795477734,
-      "release_tag": "v1.4.1",
-      "download_url": "https://github.com/mizuiroame/kairadio/releases/download/v1.4.1/KaiRadio.nro",
-      "size": 21798465
+      "sha256": "bd97407eb0f4366ae387227b097efe39a4991994023b31a56a9d63c2d0b77797",
+      "published": 1795503206,
+      "release_tag": "v1.5.0",
+      "download_url": "https://github.com/mizuiroame/kairadio/releases/download/v1.5.0/KaiRadio.nro",
+      "size": 21802561
     },
     {
       "name": "kaitube",
