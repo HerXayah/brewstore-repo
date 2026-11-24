@@ -9,10 +9,9 @@
       "release": "latest",
       "asset": "sdbench-nx2-1.0.0.zip",
       "assetTemplate": "sdbench-nx2-{version}.zip",
-      "stripPrefix": "switch/",
-      "stripPrefixTemplate": "switch/",
-      "target": "sdmc:/switch",
-      "marker": "sdmc:/switch/sdbench.nro"
+      "target": "sdmc:/",
+      "marker": "sdmc:/switch/sdbench.nro",
+      "allowUnsafeTarget": true
     }
   ]
 }

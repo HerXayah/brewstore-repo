@@ -9,9 +9,9 @@
       "release": "latest",
       "asset": "TorchlightRekindled-1.2.0-switch2.zip",
       "assetTemplate": "TorchlightRekindled-{version}-switch2.zip",
-      "stripPrefix": "switch/",
-      "stripPrefixTemplate": "switch/",
-      "target": "sdmc:/switch",
+      "stripPrefix": "switch/torchlight/",
+      "stripPrefixTemplate": "switch/torchlight/",
+      "target": "sdmc:/switch/torchlight",
       "marker": "sdmc:/switch/torchlight/torchlight.nro"
     }
   ]

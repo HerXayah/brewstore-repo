@@ -9,9 +9,9 @@
       "release": "latest",
       "asset": "starship-switch2-v1.1.zip",
       "assetTemplate": "starship-switch2-{tag}.zip",
-      "stripPrefix": "switch/",
-      "stripPrefixTemplate": "switch/",
-      "target": "sdmc:/switch",
+      "stripPrefix": "switch/starship/",
+      "stripPrefixTemplate": "switch/starship/",
+      "target": "sdmc:/switch/starship",
       "marker": "sdmc:/switch/starship/Starship.nro"
     }
   ]

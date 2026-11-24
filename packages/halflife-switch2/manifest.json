@@ -9,10 +9,9 @@
       "release": "latest",
       "asset": "halflife-switch2-1.0.0.zip",
       "assetTemplate": "halflife-switch2-{version}.zip",
-      "stripPrefix": "switch/",
-      "stripPrefixTemplate": "switch/",
-      "target": "sdmc:/switch",
-      "marker": "sdmc:/switch/halflife.nro"
+      "target": "sdmc:/",
+      "marker": "sdmc:/switch/halflife.nro",
+      "allowUnsafeTarget": true
     }
   ]
 }

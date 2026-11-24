@@ -9,9 +9,9 @@
       "release": "latest",
       "asset": "SonicCD-Switch2.zip",
       "assetTemplate": "SonicCD-Switch2.zip",
-      "stripPrefix": "switch/",
-      "stripPrefixTemplate": "switch/",
-      "target": "sdmc:/switch",
+      "stripPrefix": "switch/SonicCD/",
+      "stripPrefixTemplate": "switch/SonicCD/",
+      "target": "sdmc:/switch/SonicCD",
       "marker": "sdmc:/switch/SonicCD/SonicCD.nro"
     }
   ]

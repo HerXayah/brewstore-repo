@@ -9,10 +9,9 @@
       "release": "latest",
       "asset": "vicecity-switch2-1.0.0.zip",
       "assetTemplate": "vicecity-switch2-{version}.zip",
-      "stripPrefix": "switch/",
-      "stripPrefixTemplate": "switch/",
-      "target": "sdmc:/switch",
-      "marker": "sdmc:/switch/vicecity.nro"
+      "target": "sdmc:/",
+      "marker": "sdmc:/switch/vicecity.nro",
+      "allowUnsafeTarget": true
     }
   ]
 }

@@ -9,10 +9,9 @@
       "release": "latest",
       "asset": "dist.zip",
       "assetTemplate": "dist.zip",
-      "stripPrefix": "switch/",
-      "stripPrefixTemplate": "switch/",
-      "target": "sdmc:/switch",
-      "marker": "sdmc:/switch/reset-launch-version.nro"
+      "target": "sdmc:/",
+      "marker": "sdmc:/switch/reset-launch-version.nro",
+      "allowUnsafeTarget": true
     }
   ]
 }

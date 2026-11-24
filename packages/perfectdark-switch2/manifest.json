@@ -9,10 +9,9 @@
       "release": "latest",
       "asset": "perfectdark-switch2-1.0.0.zip",
       "assetTemplate": "perfectdark-switch2-{version}.zip",
-      "stripPrefix": "switch/",
-      "stripPrefixTemplate": "switch/",
-      "target": "sdmc:/switch",
-      "marker": "sdmc:/switch/perfectdark.nro"
+      "target": "sdmc:/",
+      "marker": "sdmc:/switch/perfectdark.nro",
+      "allowUnsafeTarget": true
     }
   ]
 }
