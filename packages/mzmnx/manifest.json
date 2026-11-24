@@ -10,7 +10,10 @@
       "asset": "mzmnx-switch2.nro",
       "assetTemplate": "mzmnx-switch2.nro",
       "target": "sdmc:/switch/mzmnx",
-      "marker": "sdmc:/switch/mzmnx/mzmnx-switch2.nro"
+      "marker": "sdmc:/switch/mzmnx/mzmnx-switch2.nro",
+      "version": "nx-switch2-v1.4",
+      "sha256": "05f5292691d1395fb5bdca7681fb78544eb21ba4817f8abacf283f8b67541593",
+      "published": 1795065578
     }
   ]
 }

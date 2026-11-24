@@ -12,7 +12,10 @@
       "stripPrefix": "switch/YataiDON/",
       "stripPrefixTemplate": "switch/YataiDON/",
       "target": "sdmc:/switch/YataiDON",
-      "marker": "sdmc:/switch/YataiDON/YataiDON.nro"
+      "marker": "sdmc:/switch/YataiDON/YataiDON.nro",
+      "version": "latest",
+      "sha256": "2c403b7d20edf5df1464da247fc20f625dd7431b307642106cf3463f595b5da8",
+      "published": 1780173204
     }
   ]
 }

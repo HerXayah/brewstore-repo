@@ -10,7 +10,10 @@
       "asset": "doom.nro",
       "assetTemplate": "doom.nro",
       "target": "sdmc:/switch/chocolate-doom",
-      "marker": "sdmc:/switch/chocolate-doom/doom.nro"
+      "marker": "sdmc:/switch/chocolate-doom/doom.nro",
+      "version": "20261114",
+      "sha256": "fead81ce9a3c6303f874453c6e402a62a350c9b42a9b5a3384b3fbfb56310108",
+      "published": 1794622096
     }
   ]
 }

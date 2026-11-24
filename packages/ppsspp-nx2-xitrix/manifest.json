@@ -10,7 +10,10 @@
       "asset": "PPSSPP-NX2.nro",
       "assetTemplate": "PPSSPP-NX2.nro",
       "target": "sdmc:/switch/ppsspp-xitrix",
-      "marker": "sdmc:/switch/ppsspp-xitrix/PPSSPP-NX2.nro"
+      "marker": "sdmc:/switch/ppsspp-xitrix/PPSSPP-NX2.nro",
+      "version": "v0.1.0",
+      "sha256": "9351dbb8cc4950c204d8ddf9d962fdaab05e6ed28e2ace754d3a25d79afdaff3",
+      "published": 1795115554
     }
   ]
 }

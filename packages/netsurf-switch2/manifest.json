@@ -10,7 +10,10 @@
       "asset": "netsurf-switch2.nro",
       "assetTemplate": "netsurf-switch2.nro",
       "target": "sdmc:/switch/netsurf",
-      "marker": "sdmc:/switch/netsurf/netsurf-switch2.nro"
+      "marker": "sdmc:/switch/netsurf/netsurf-switch2.nro",
+      "version": "v3.12-switch2",
+      "sha256": "251fd5337a45e86e0af63e89a3633964a78e7b1bb06ecc17560d9f009079b13c",
+      "published": 1794967929
     }
   ]
 }

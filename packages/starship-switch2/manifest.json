@@ -12,7 +12,10 @@
       "stripPrefix": "switch/starship/",
       "stripPrefixTemplate": "switch/starship/",
       "target": "sdmc:/switch/starship",
-      "marker": "sdmc:/switch/starship/Starship.nro"
+      "marker": "sdmc:/switch/starship/Starship.nro",
+      "version": "v1.1",
+      "sha256": "ad6dc4ffa00853c9a6949f6726e948df1715d1b623a689e0235e7033437a2375",
+      "published": 1795442302
     }
   ]
 }

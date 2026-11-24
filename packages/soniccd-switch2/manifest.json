@@ -12,7 +12,10 @@
       "stripPrefix": "switch/SonicCD/",
       "stripPrefixTemplate": "switch/SonicCD/",
       "target": "sdmc:/switch/SonicCD",
-      "marker": "sdmc:/switch/SonicCD/SonicCD.nro"
+      "marker": "sdmc:/switch/SonicCD/SonicCD.nro",
+      "version": "1.0.0",
+      "sha256": "c950c9bd8debc881f31a1e670a78ff9ae6b947fa4aac947d74b4a77b24c27ed0",
+      "published": 1795399922
     }
   ]
 }

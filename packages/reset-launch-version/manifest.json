@@ -11,7 +11,10 @@
       "assetTemplate": "dist.zip",
       "target": "sdmc:/",
       "marker": "sdmc:/switch/reset-launch-version.nro",
-      "allowUnsafeTarget": true
+      "allowUnsafeTarget": true,
+      "version": "latest",
+      "sha256": "da6a82226f22375a7589b5d356f81a03d2d0d1c58926c4b87bb9e62974cecdf6",
+      "published": 1795295722
     }
   ]
 }
