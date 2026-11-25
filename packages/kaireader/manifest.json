@@ -1,0 +1,17 @@
+{
+  "packages": [
+    {
+      "name": "kaireader",
+      "title": "KaiReader",
+      "author": "Mizuiro",
+      "description": "Book reader for Switch 2: your DRM-free EPUB, PDF, comics (CBZ, CBR, CB7), FB2, MOBI and TXT with their covers, from the SD card, a network folder (SMB, WebDAV, FTP, SFTP) or your book server (Calibre-Web, Kavita, Komga), and free classics from Project Gutenberg and Standard Ebooks. Ten text sizes, four page colors, two pages side by side, zoom, bookmarks and the console held upright like a book.",
+      "icon": "https://raw.githubusercontent.com/mizuiroame/kaireader/main/icon.jpg",
+      "version": "v1.0.0",
+      "url": "https://github.com/mizuiroame/kaireader",
+      "release": "latest",
+      "asset": "",
+      "sha256": "3fe61171a6e5410b4927aa044987cc7c82deb2b72d4c214fd6a3220ca76e4f2a",
+      "published": 1795570841
+    }
+  ]
+}
