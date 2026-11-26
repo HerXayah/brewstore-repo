@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "count": 86,
+  "count": 87,
   "packages": [
     {
       "name": "90dns-tester",
@@ -348,17 +348,17 @@
       "author": "WeWaffles",
       "description": "Menu music for Switch 2. Installs the selector and kaiHEN plugin; put a 48 kHz stereo PCM16 WAV in /switch/kai-menu-music/.",
       "icon": "https://github.com/WeWaffles.png",
-      "version": "v1.1.0",
+      "version": "v1.2.0",
       "url": "https://github.com/WeWaffles/kai-menu-music",
-      "asset": "kai-menu-music-v1.1.0.zip",
+      "asset": "kai-menu-music-v1.2.0.zip",
       "target": "sdmc:/",
       "marker": "sdmc:/kaihen/plugins/kai-menu-music.nso",
-      "sha256": "bc5c9e47b30bbd71a43c0644226956a428a9c7592ca4f0f09b8e8bdfaf91cf0a",
-      "published": 1795203675,
+      "sha256": "24ffb6ad7b709edc049f1e9ee8d004326ced609e67d5c4a06151df7d891e29ff",
+      "published": 1795709333,
       "shortcut": true,
-      "release_tag": "v1.1.0",
-      "download_url": "https://github.com/WeWaffles/kai-menu-music/releases/download/v1.1.0/kai-menu-music-v1.1.0.zip",
-      "size": 159294
+      "release_tag": "v1.2.0",
+      "download_url": "https://github.com/WeWaffles/kai-menu-music/releases/download/v1.2.0/kai-menu-music-v1.2.0.zip",
+      "size": 168597
     },
     {
       "name": "kaidump",
@@ -381,7 +381,7 @@
       "name": "kaiplayer",
       "title": "KaiPlayer",
       "author": "Mizuiro",
-      "description": "Music player for Switch 2: a library of your artists, albums and songs from the SD card; MP3, FLAC, Ogg Vorbis, WAV and DSD; album art, playlists, equalizer, ReplayGain, sleep timer, resume, and Now Playing as a record, CD or cassette.",
+      "description": "Music player for Switch 2: a library of your artists, albums and songs from the SD card, a network folder or your Navidrome server; MP3, FLAC, AAC, ALAC, Opus, Ogg Vorbis, WAV and DSD; album art, playlists, equalizer, ReplayGain, sleep timer, resume, Now Playing as a record, CD or cassette, and 9 languages.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kaiplayer/main/icon.jpg",
       "version": "v1.7.0",
       "url": "https://github.com/mizuiroame/kaiplayer",
@@ -396,7 +396,7 @@
       "name": "kairadio",
       "title": "KaiRadio",
       "author": "Mizuiro",
-      "description": "Internet radio for Switch 2: tens of thousands of stations from Radio Browser, a world map, favorites, HLS.",
+      "description": "Internet radio and podcasts for Switch 2: tens of thousands of stations from Radio Browser on a globe with each country's time and weather, at random or by name, genre, country or language; favorites; podcast charts by region, search and subscriptions; 9 languages.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kairadio/main/icon.jpg",
       "version": "v1.7.0",
       "url": "https://github.com/mizuiroame/kairadio",
@@ -406,6 +406,21 @@
       "release_tag": "v1.7.0",
       "download_url": "https://github.com/mizuiroame/kairadio/releases/download/v1.7.0/KaiRadio.nro",
       "size": 22049107
+    },
+    {
+      "name": "kaireader",
+      "title": "KaiReader",
+      "author": "Mizuiro",
+      "description": "Book reader for Switch 2: your DRM-free EPUB, PDF, comics (CBZ, CBR, CB7), FB2, MOBI and TXT with their covers, from the SD card, a network folder (SMB, WebDAV, FTP, SFTP) or your book server (Calibre-Web, Kavita, Komga), and free classics from Project Gutenberg and Standard Ebooks. Ten text sizes, four page colors, two pages side by side, zoom, bookmarks and the console held upright like a book.",
+      "icon": "https://raw.githubusercontent.com/mizuiroame/kaireader/main/icon.jpg",
+      "version": "v1.2.0",
+      "url": "https://github.com/mizuiroame/kaireader",
+      "asset": "KaiReader.nro",
+      "sha256": "26142cba340bfd4aca332e5d5b0d80cbdd4673ad3e658e7464c726f2c1d67571",
+      "published": 1795676986,
+      "release_tag": "v1.2.0",
+      "download_url": "https://github.com/mizuiroame/kaireader/releases/download/v1.2.0/KaiReader.nro",
+      "size": 27077346
     },
     {
       "name": "kaitube",
@@ -425,7 +440,7 @@
       "name": "kaivideo",
       "title": "KaiVideo",
       "author": "Mizuiro",
-      "description": "Video player for Switch 2: your films and series from the SD card or your Jellyfin, Emby or Plex server, with hardware decoding (H.264, VP9, AV1), HEVC on the CPU, 4K, skip intro, Live TV, favorites, subtitles in your choice of fonts, sound tracks, resume and next episode.",
+      "description": "Video player for Switch 2: your films and series from the SD card, a network folder (Windows, NAS, WebDAV) or your Jellyfin, Emby or Plex server, with hardware decoding (H.264, VP9, AV1), HEVC on the CPU, 4K, downloads to watch offline, Live TV, your own IPTV list and Stremio addons, skip intro, subtitles in your choice of fonts, and 9 languages.",
       "icon": "https://raw.githubusercontent.com/mizuiroame/kaivideo/main/icon.jpg",
       "version": "v1.18.0",
       "url": "https://github.com/mizuiroame/kaivideo",
