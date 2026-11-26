@@ -91,6 +91,7 @@
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/starship-switch2/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/yataidon/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/reset-launch-version/manifest.json",
-    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/soniccd-switch2/manifest.json"
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/soniccd-switch2/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaireader/manifest.json"
   ]
 }
