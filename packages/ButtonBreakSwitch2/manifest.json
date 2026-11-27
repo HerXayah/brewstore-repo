@@ -8,7 +8,6 @@
       "url": "https://github.com/StrongEnough295/ButtonBreakSwitch2",
       "release": "latest",
       "asset": "ButtonBreakSwitch2.nro",
-      "assetTemplate": "ButtonBreakSwitch2.nro",
       "target": "sdmc:/",
       "marker": "sdmc:/switch/ButtonBreakSwitch2.nro",
       "allowUnsafeTarget": true
