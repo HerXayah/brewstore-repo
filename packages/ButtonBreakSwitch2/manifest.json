@@ -1,0 +1,17 @@
+{
+  "packages": [
+    {
+      "name": "ButtonBreakSwitch2",
+      "title": "ButtonBreakSwitch 2",
+      "author": "StrongEnough",
+      "description": "Button Break for Switch 2. A port of the ButtonBreakSwitch homebrew app.",
+      "url": "https://github.com/StrongEnough295/ButtonBreakSwitch2",
+      "release": "latest",
+      "asset": "ButtonBreakSwitch2.nro",
+      "assetTemplate": "ButtonBreakSwitch2.nro",
+      "target": "sdmc:/",
+      "marker": "sdmc:/switch/ButtonBreakSwitch2.nro",
+      "allowUnsafeTarget": true
+    }
+  ]
+}
