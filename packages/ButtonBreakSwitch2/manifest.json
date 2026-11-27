@@ -9,7 +9,6 @@
       "release": "latest",
       "asset": "ButtonBreakSwitch2.nro",
       "target": "sdmc:/switch/ButtonBreakSwitch2.nro",
-      "allowUnsafeTarget": true
     }
   ]
 }
