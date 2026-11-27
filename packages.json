@@ -93,5 +93,6 @@
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/reset-launch-version/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/soniccd-switch2/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaireader/manifest.json"
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/ButtonBreakSwitch2/manifest.json"
   ]
 }
