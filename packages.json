@@ -92,6 +92,7 @@
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/yataidon/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/reset-launch-version/manifest.json",
     "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/soniccd-switch2/manifest.json",
-    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaireader/manifest.json"
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/kaireader/manifest.json",
+    "https://raw.githubusercontent.com/HerXayah/brewstore-repo/main/packages/melonds-nx2/manifest.json"
   ]
 }
