@@ -1,0 +1,17 @@
+{
+  "packages": [
+    {
+      "name": "melonds-nx2",
+      "title": "melonDS NX2",
+      "author": "Clutch0011, melonDS team",
+      "description": "Nintendo DS/DSi emulator for Switch 2 (kaiHEN), a port of melonDS 1.1: JIT, OpenGL renderer up to 4x, save states shared with melonDS on PC, cheats, 8 interface languages.",
+      "icon": "https://raw.githubusercontent.com/Clutch0011/melonDS-NX2/main/res/switch2/icon.jpg",
+      "url": "https://github.com/Clutch0011/melonDS-NX2",
+      "release": "latest",
+      "prerelease": true,
+      "asset": "melonDS-NX2.nro",
+      "target": "sdmc:/switch/melonDS-NX2",
+      "marker": "sdmc:/switch/melonDS-NX2/melonDS-NX2.nro"
+    }
+  ]
+}
